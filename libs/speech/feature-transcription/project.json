@@ -1,0 +1,13 @@
+{
+  "name": "speech-feature-transcription",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/speech/feature-transcription/src",
+  "prefix": "speech-feature-transcription",
+  "projectType": "library",
+  "tags": ["domain:speech", "type:feature"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

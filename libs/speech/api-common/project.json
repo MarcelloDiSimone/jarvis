@@ -1,0 +1,13 @@
+{
+  "name": "speech-api-common",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/speech/api-common/src",
+  "prefix": "speech-api-common",
+  "projectType": "library",
+  "tags": ["domain:speech", "domain:speech/api-common", "type:api"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

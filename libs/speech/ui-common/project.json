@@ -1,0 +1,13 @@
+{
+  "name": "speech-ui-common",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/speech/ui-common/src",
+  "prefix": "speech-ui-common",
+  "projectType": "library",
+  "tags": ["domain:speech", "type:ui"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

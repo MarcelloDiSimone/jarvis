@@ -1,0 +1,13 @@
+{
+  "name": "speech-domain",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/speech/domain/src",
+  "prefix": "speech-domain",
+  "projectType": "library",
+  "tags": ["domain:speech", "type:domain-logic"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
