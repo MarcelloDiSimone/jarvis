@@ -14,12 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "paths": {
-      "@org/speech/api-common": ["./libs/speech/api-common/src/index.ts"],
-      "@org/speech/domain": ["./libs/speech/domain/src/index.ts"],
-      "@org/speech/feature-transcription": [
+      "@jarvis/speech/api-common": ["./libs/speech/api-common/src/index.ts"],
+      "@jarvis/speech/domain": ["./libs/speech/domain/src/index.ts"],
+      "@jarvis/speech/feature-transcription": [
         "./libs/speech/feature-transcription/src/index.ts"
       ],
-      "@org/speech/ui-common": ["./libs/speech/ui-common/src/index.ts"]
+      "@jarvis/speech/ui-common": ["./libs/speech/ui-common/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

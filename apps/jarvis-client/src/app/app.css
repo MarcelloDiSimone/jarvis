@@ -4,18 +4,16 @@
 
 .shell {
   min-height: 100vh;
-  display: grid;
-  place-items: center;
-  padding: 2rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
 }
 
-.panel {
-  width: min(100%, 42rem);
-  padding: 2.5rem;
-  border: 1px solid #d4d4d8;
-  border-radius: 1.5rem;
-  background: rgba(255, 255, 255, 0.88);
-  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
+.topbar {
+  width: min(100%, 72rem);
+  margin: 0 auto 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: end;
 }
 
 .eyebrow {
@@ -28,13 +26,41 @@
 
 h1 {
   margin: 0;
-  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1;
 }
 
-.copy {
-  margin: 1rem 0 0;
+.nav {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0 1rem;
+  border-radius: 999px;
   color: #44403c;
-  font-size: 1.05rem;
-  line-height: 1.6;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.66);
+  border: 1px solid rgba(24, 24, 27, 0.08);
+}
+
+.nav a.active {
+  color: #fff;
+  background: linear-gradient(135deg, #0f766e, #1d4ed8);
+}
+
+.content {
+  width: min(100%, 72rem);
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .topbar {
+    align-items: start;
+    flex-direction: column;
+  }
 }

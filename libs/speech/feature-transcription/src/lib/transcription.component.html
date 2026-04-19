@@ -1,1 +1,8 @@
-<h1>speech-transcription</h1>
+<speech-ui-common-transcript-form
+  [transcript]="(transcript$ | async) ?? ''"
+  [isRecording]="(isRecording$ | async) ?? false"
+  [statusMessage]="(statusMessage$ | async) ?? ''"
+  [isSupported]="isSupported"
+  (recordClicked)="startRecording()"
+  (transcriptChange)="updateTranscript($event)"
+/>

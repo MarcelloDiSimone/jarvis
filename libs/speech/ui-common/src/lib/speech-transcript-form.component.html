@@ -1,0 +1,35 @@
+<section class="speech-panel">
+  <header class="speech-header">
+    <p class="eyebrow">Speech</p>
+    <h1>Speech Recognition</h1>
+    <p class="copy">
+      Record a short phrase and inspect the recognized text.
+    </p>
+  </header>
+
+  <div class="controls">
+    <button
+      type="button"
+      class="record-button"
+      [disabled]="!isSupported() || isRecording()"
+      (click)="onRecordClick()"
+    >
+      {{ isRecording() ? 'Listening...' : 'Record' }}
+    </button>
+
+    <p class="status" [class.status-error]="!isSupported()">
+      {{ statusMessage() }}
+    </p>
+  </div>
+
+  <label class="transcript-field" for="speech-transcript">
+    <span>Transcript</span>
+    <textarea
+      id="speech-transcript"
+      rows="10"
+      [value]="transcript()"
+      (input)="onTranscriptInput($event)"
+      placeholder="Recognized text will appear here"
+    ></textarea>
+  </label>
+</section>

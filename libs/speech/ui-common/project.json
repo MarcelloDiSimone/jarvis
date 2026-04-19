@@ -4,7 +4,7 @@
   "sourceRoot": "libs/speech/ui-common/src",
   "prefix": "speech-ui-common",
   "projectType": "library",
-  "tags": ["domain:speech", "type:ui"],
+  "tags": ["domain:speech", "scope:client", "type:ui"],
   "targets": {
     "lint": {
       "executor": "@nx/eslint:lint"

@@ -4,7 +4,7 @@
   "sourceRoot": "libs/speech/feature-transcription/src",
   "prefix": "speech-feature-transcription",
   "projectType": "library",
-  "tags": ["domain:speech", "type:feature"],
+  "tags": ["domain:speech", "scope:client", "type:feature"],
   "targets": {
     "lint": {
       "executor": "@nx/eslint:lint"

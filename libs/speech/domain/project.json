@@ -4,7 +4,7 @@
   "sourceRoot": "libs/speech/domain/src",
   "prefix": "speech-domain",
   "projectType": "library",
-  "tags": ["domain:speech", "type:domain-logic"],
+  "tags": ["domain:speech", "scope:client", "type:domain-logic"],
   "targets": {
     "lint": {
       "executor": "@nx/eslint:lint"

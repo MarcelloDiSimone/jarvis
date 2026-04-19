@@ -1,10 +1,16 @@
 <main class="shell">
-  <section class="panel">
-    <p class="eyebrow">Nx Workspace</p>
-    <h1>{{ title }}</h1>
-    <p class="copy">
-      This app has been reset to a minimal Angular shell. Add routes, features,
-      and shared libraries as the workspace evolves.
-    </p>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Voice Sandbox</p>
+      <h1>{{ title }}</h1>
+    </div>
+
+    <nav class="nav">
+      <a routerLink="/speech" routerLinkActive="active">Speech</a>
+    </nav>
+  </header>
+
+  <section class="content">
+    <router-outlet />
   </section>
 </main>

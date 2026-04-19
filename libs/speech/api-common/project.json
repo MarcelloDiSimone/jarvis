@@ -4,7 +4,12 @@
   "sourceRoot": "libs/speech/api-common/src",
   "prefix": "speech-api-common",
   "projectType": "library",
-  "tags": ["domain:speech", "domain:speech/api-common", "type:api"],
+  "tags": [
+    "domain:speech",
+    "domain:speech/api-common",
+    "scope:client",
+    "type:api"
+  ],
   "targets": {
     "lint": {
       "executor": "@nx/eslint:lint"
