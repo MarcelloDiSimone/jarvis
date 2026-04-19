@@ -1,7 +1,13 @@
-import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  input,
+  output,
+} from '@angular/core';
 
 @Component({
   selector: 'speech-ui-common-transcript-form',
+  standalone: true,
   templateUrl: './speech-transcript-form.component.html',
   styleUrl: './speech-transcript-form.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

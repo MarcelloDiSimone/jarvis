@@ -3,6 +3,6 @@
   [isRecording]="(isRecording$ | async) ?? false"
   [statusMessage]="(statusMessage$ | async) ?? ''"
   [isSupported]="isSupported"
-  (recordClicked)="startRecording()"
+  (recordClicked)="toggleRecording()"
   (transcriptChange)="updateTranscript($event)"
 />

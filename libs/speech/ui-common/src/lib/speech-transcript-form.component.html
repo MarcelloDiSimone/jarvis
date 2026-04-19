@@ -11,10 +11,11 @@
     <button
       type="button"
       class="record-button"
-      [disabled]="!isSupported() || isRecording()"
+      [class.is-recording]="isRecording()"
+      [disabled]="!isSupported()"
       (click)="onRecordClick()"
     >
-      {{ isRecording() ? 'Listening...' : 'Record' }}
+      {{ isRecording() ? 'Stop recording' : 'Record' }}
     </button>
 
     <p class="status" [class.status-error]="!isSupported()">

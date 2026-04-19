@@ -9,7 +9,7 @@ export const appRoutes: Route[] = [
   {
     path: 'speech',
     loadComponent: () =>
-      import('@jarvis/speech/feature-transcription').then(
+      import('@jarvis/speech-feature-transcription').then(
         (module) => module.TranscriptionComponent,
       ),
   },

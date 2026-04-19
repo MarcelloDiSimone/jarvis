@@ -1,7 +1,7 @@
 import { AsyncPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { TranscriptionFacade } from '@jarvis/speech/domain';
-import { SpeechTranscriptFormComponent } from '@jarvis/speech/ui-common';
+import { TranscriptionFacade } from '@jarvis/speech-domain';
+import { SpeechTranscriptFormComponent } from '@jarvis/speech-ui-common';
 
 @Component({
   standalone: true,
@@ -18,8 +18,8 @@ export class TranscriptionComponent {
   protected readonly statusMessage$ = this.transcriptionFacade.statusMessage$;
   protected readonly isSupported = this.transcriptionFacade.isSupported();
 
-  protected startRecording(): void {
-    this.transcriptionFacade.startRecording();
+  protected toggleRecording(): void {
+    this.transcriptionFacade.toggleRecording();
   }
 
   protected updateTranscript(transcript: string): void {

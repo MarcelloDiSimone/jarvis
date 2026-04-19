@@ -1,5 +1,5 @@
 import { inject, Injectable } from '@angular/core';
-import { BehaviorSubject, finalize } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 import { SpeechRecognitionService } from '../infrastructure/speech-recognition.service';
 
 @Injectable({ providedIn: 'root' })
@@ -19,28 +19,40 @@ export class TranscriptionFacade {
     return this.speechRecognition.isSupported();
   }
 
-  startRecording(): void {
-    if (!this.isSupported() || this.isRecordingSubject.value) {
+  toggleRecording(): void {
+    if (!this.isSupported()) {
+      this.statusMessageSubject.next(
+        'Speech recognition is not supported in this browser.',
+      );
       return;
     }
 
-    this.isRecordingSubject.next(true);
-    this.statusMessageSubject.next('Listening for speech...');
+    if (this.isRecordingSubject.value) {
+      this.speechRecognition.stop();
+      this.isRecordingSubject.next(false);
+      this.statusMessageSubject.next('Recording stopped.');
+      return;
+    }
 
-    this.speechRecognition
-      .recordOnce()
-      .pipe(finalize(() => this.isRecordingSubject.next(false)))
-      .subscribe({
-        next: (transcript) => {
-          this.activeTranscriptSubject.next(transcript);
-          this.statusMessageSubject.next('Recognition complete.');
-        },
-        error: (error: Error) => {
-          this.statusMessageSubject.next(
-            `Recognition failed: ${error.message}`,
-          );
-        },
-      });
+    this.speechRecognition.start({
+      initialTranscript: this.activeTranscriptSubject.value,
+      onStart: () => {
+        this.isRecordingSubject.next(true);
+        this.statusMessageSubject.next('Listening for speech...');
+      },
+      onResult: (transcript) => {
+        this.activeTranscriptSubject.next(transcript);
+        this.statusMessageSubject.next('Transcript updated.');
+      },
+      onEnd: () => {
+        this.isRecordingSubject.next(false);
+        this.statusMessageSubject.next('Recording complete.');
+      },
+      onError: (error) => {
+        this.isRecordingSubject.next(false);
+        this.statusMessageSubject.next(`Recognition failed: ${error.message}`);
+      },
+    });
   }
 
   updateTranscript(transcript: string): void {

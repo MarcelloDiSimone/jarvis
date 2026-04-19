@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 
 interface SpeechRecognitionAlternativeLike {
   transcript: string;
 }
 
 interface SpeechRecognitionResultLike {
+  isFinal?: boolean;
   0: SpeechRecognitionAlternativeLike;
 }
 
@@ -33,6 +33,14 @@ interface SpeechRecognitionConstructorLike {
   new (): SpeechRecognitionLike;
 }
 
+type SpeechRecognitionCallbacks = {
+  initialTranscript?: string;
+  onStart?: () => void;
+  onResult?: (transcript: string) => void;
+  onEnd?: () => void;
+  onError?: (error: Error) => void;
+};
+
 @Injectable({ providedIn: 'root' })
 export class SpeechRecognitionService {
   private recognition: SpeechRecognitionLike | null = null;
@@ -41,55 +49,63 @@ export class SpeechRecognitionService {
     return this.getRecognitionConstructor() !== null;
   }
 
-  recordOnce(): Observable<string> {
-    return new Observable<string>((subscriber) => {
-      const SpeechRecognitionClass = this.getRecognitionConstructor();
+  start(callbacks: SpeechRecognitionCallbacks): void {
+    const SpeechRecognitionClass = this.getRecognitionConstructor();
 
-      if (!SpeechRecognitionClass) {
-        subscriber.error(new Error('Speech recognition is not supported in this browser.'));
-        return;
-      }
+    if (!SpeechRecognitionClass) {
+      callbacks.onError?.(
+        new Error('Speech recognition is not supported in this browser.')
+      );
+      return;
+    }
 
-      const recognition = new SpeechRecognitionClass();
-      this.recognition = recognition;
+    this.stop();
 
-      recognition.continuous = false;
-      recognition.lang = 'en-US';
-      recognition.interimResults = false;
-      recognition.maxAlternatives = 1;
+    const recognition = new SpeechRecognitionClass();
+    let transcript = callbacks.initialTranscript?.trim() ?? '';
 
-      recognition.onresult = (event) => {
-        const transcript = event.results[0]?.[0]?.transcript?.trim() ?? '';
-        if (transcript) {
-          subscriber.next(transcript);
-        }
-      };
+    this.recognition = recognition;
 
-      recognition.onerror = (event) => {
-        subscriber.error(new Error(event.error));
-      };
+    recognition.continuous = true;
+    recognition.lang = 'en-US';
+    recognition.interimResults = true;
+    recognition.maxAlternatives = 1;
 
-      recognition.onend = () => {
+    recognition.onresult = (event) => {
+      transcript = Array.from(event.results)
+        .map((result) => result[0]?.transcript?.trim() ?? '')
+        .filter(Boolean)
+        .join(' ')
+        .trim();
+
+      callbacks.onResult?.(transcript);
+    };
+
+    recognition.onerror = (event) => {
+      callbacks.onError?.(new Error(event.error));
+    };
+
+    recognition.onend = () => {
+      if (this.recognition === recognition) {
         this.recognition = null;
-        subscriber.complete();
-      };
+      }
+      callbacks.onEnd?.();
+    };
 
-      recognition.start();
-
-      return () => {
-        recognition.onresult = null;
-        recognition.onerror = null;
-        recognition.onend = null;
-        recognition.stop();
-        if (this.recognition === recognition) {
-          this.recognition = null;
-        }
-      };
-    });
+    recognition.start();
+    callbacks.onStart?.();
   }
 
   stop(): void {
-    this.recognition?.stop();
+    const recognition = this.recognition;
+    if (!recognition) {
+      return;
+    }
+
+    recognition.onresult = null;
+    recognition.onerror = null;
+    recognition.onend = null;
+    recognition.stop();
     this.recognition = null;
   }
 

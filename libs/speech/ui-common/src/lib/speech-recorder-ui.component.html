@@ -1,0 +1,26 @@
+<section class="recorder-card">
+  <div class="toolbar">
+    <button
+      type="button"
+      class="record-button"
+      [class.recording]="isRecording()"
+      (click)="recordToggled.emit()"
+    >
+      {{ isRecording() ? 'Stop recording' : 'Start recording' }}
+    </button>
+
+    <p class="status" [class.live]="isRecording()">
+      {{ isRecording() ? 'Listening…' : 'Idle' }}
+    </p>
+  </div>
+
+  <label class="label" for="speech-transcript">Transcript</label>
+  <textarea
+    id="speech-transcript"
+    class="transcript"
+    rows="10"
+    [value]="text()"
+    (input)="textChanged.emit(($any($event.target)).value)"
+    placeholder="Your recognized speech will appear here."
+  ></textarea>
+</section>

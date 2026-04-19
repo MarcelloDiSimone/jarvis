@@ -1,0 +1,87 @@
+.recorder-card {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  background:
+    linear-gradient(135deg, rgba(255, 237, 213, 0.9), rgba(255, 255, 255, 0.95)),
+    #fff;
+  border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.record-button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.9rem 1.25rem;
+  font: inherit;
+  font-weight: 700;
+  color: #fff7ed;
+  background: #9a3412;
+  cursor: pointer;
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease,
+    background-color 150ms ease;
+  box-shadow: 0 12px 30px rgba(154, 52, 18, 0.24);
+}
+
+.record-button:hover {
+  transform: translateY(-1px);
+}
+
+.record-button.recording {
+  background: #dc2626;
+  box-shadow: 0 12px 30px rgba(220, 38, 38, 0.24);
+}
+
+.status {
+  margin: 0;
+  font-weight: 600;
+  color: #57534e;
+}
+
+.status.live {
+  color: #b91c1c;
+}
+
+.label {
+  font-weight: 700;
+  color: #44403c;
+}
+
+.transcript {
+  width: 100%;
+  resize: vertical;
+  min-height: 16rem;
+  border: 1px solid #fdba74;
+  border-radius: 1rem;
+  padding: 1rem;
+  font: inherit;
+  line-height: 1.5;
+  color: #292524;
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.transcript:focus {
+  outline: 2px solid rgba(234, 88, 12, 0.28);
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .recorder-card {
+    padding: 1rem;
+  }
+
+  .record-button {
+    width: 100%;
+    justify-self: stretch;
+  }
+}
