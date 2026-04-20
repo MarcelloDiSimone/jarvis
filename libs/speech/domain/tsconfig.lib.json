@@ -5,7 +5,7 @@
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
-    "types": []
+    "types": ["dom-speech-recognition"]
   },
   "include": ["src/**/*.ts"],
   "exclude": [
