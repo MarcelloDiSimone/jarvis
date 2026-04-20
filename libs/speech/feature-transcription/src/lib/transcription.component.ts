@@ -1,6 +1,6 @@
 import { AsyncPipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { TranscriptionFacade } from '@jarvis/speech-domain';
+import { TranscriptionFacade, type VoiceState } from '@jarvis/speech-domain';
 import { SpeechTranscriptFormComponent } from '@jarvis/speech-ui-common';
 
 @Component({
@@ -16,13 +16,28 @@ export class TranscriptionComponent {
   protected readonly transcript$ = this.transcriptionFacade.activeTranscript$;
   protected readonly isRecording$ = this.transcriptionFacade.isRecording$;
   protected readonly statusMessage$ = this.transcriptionFacade.statusMessage$;
+  protected readonly voiceState$ = this.transcriptionFacade.voiceState$;
   protected readonly isSupported = this.transcriptionFacade.isSupported();
 
-  protected toggleRecording(): void {
-    this.transcriptionFacade.toggleRecording();
+  constructor() {
+    this.transcriptionFacade.start();
   }
 
   protected updateTranscript(transcript: string): void {
     this.transcriptionFacade.updateTranscript(transcript);
+  }
+
+  protected reactivate(): void {
+    this.transcriptionFacade.reactivate();
+  }
+
+  protected readonly voiceStateLabels: Record<VoiceState, string> = {
+    inactive: 'Inactive',
+    waiting: 'Waiting',
+    recording: 'Recording',
+  };
+
+  ngOnDestroy(): void {
+    this.transcriptionFacade.stop();
   }
 }

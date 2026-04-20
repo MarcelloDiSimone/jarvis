@@ -5,6 +5,8 @@ import {
   output,
 } from '@angular/core';
 
+type VoiceState = 'inactive' | 'waiting' | 'recording';
+
 @Component({
   selector: 'speech-ui-common-transcript-form',
   standalone: true,
@@ -17,16 +19,19 @@ export class SpeechTranscriptFormComponent {
   readonly isRecording = input(false);
   readonly isSupported = input(true);
   readonly statusMessage = input('');
+  readonly voiceState = input<VoiceState>('inactive');
+  readonly voiceStateLabel = input('Inactive');
+  readonly showReactivate = input(false);
 
-  readonly recordClicked = output<void>();
   readonly transcriptChange = output<string>();
+  readonly reactivateClicked = output<void>();
 
   onTranscriptInput(event: Event): void {
     const target = event.target as HTMLTextAreaElement;
     this.transcriptChange.emit(target.value);
   }
 
-  onRecordClick(): void {
-    this.recordClicked.emit();
+  onReactivateClick(): void {
+    this.reactivateClicked.emit();
   }
 }

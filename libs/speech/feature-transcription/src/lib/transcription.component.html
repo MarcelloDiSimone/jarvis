@@ -2,7 +2,10 @@
   [transcript]="(transcript$ | async) ?? ''"
   [isRecording]="(isRecording$ | async) ?? false"
   [statusMessage]="(statusMessage$ | async) ?? ''"
+  [voiceState]="(voiceState$ | async) ?? 'inactive'"
+  [voiceStateLabel]="voiceStateLabels[(voiceState$ | async) ?? 'inactive']"
   [isSupported]="isSupported"
-  (recordClicked)="toggleRecording()"
+  [showReactivate]="((voiceState$ | async) ?? 'inactive') === 'inactive' && isSupported"
+  (reactivateClicked)="reactivate()"
   (transcriptChange)="updateTranscript($event)"
 />

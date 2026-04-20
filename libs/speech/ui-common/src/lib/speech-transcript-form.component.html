@@ -1,36 +1,48 @@
-<section class="speech-panel">
-  <header class="speech-header">
-    <p class="eyebrow">Speech</p>
-    <h1>Speech Recognition</h1>
-    <p class="copy">
-      Record a short phrase and inspect the recognized text.
-    </p>
-  </header>
+<div>
+  <section class="speech-panel">
+    <header class="speech-header">
+      <p class="eyebrow">Speech</p>
+      <h1>Wake Word Control</h1>
+      <p class="copy">
+        Jarvis keeps listening in the background. Say "Jarvis", wait for the
+        reply, then speak your command. The text appears after you pause.
+      </p>
+    </header>
 
-  <div class="controls">
-    <button
-      type="button"
-      class="record-button"
-      [class.is-recording]="isRecording()"
-      [disabled]="!isSupported()"
-      (click)="onRecordClick()"
-    >
-      {{ isRecording() ? 'Stop recording' : 'Record' }}
-    </button>
+    <div class="controls">
+      <div class="state-chip" [attr.data-state]="voiceState()">
+        <span class="state-dot" aria-hidden="true"></span>
+        <span class="state-label">{{ voiceStateLabel() }}</span>
+      </div>
 
-    <p class="status" [class.status-error]="!isSupported()">
-      {{ statusMessage() }}
-    </p>
-  </div>
+      @if (showReactivate()) {
+        <button
+          type="button"
+          class="reactivate-button"
+          (click)="onReactivateClick()"
+        >
+          Reactivate
+        </button>
+      }
 
-  <label class="transcript-field" for="speech-transcript">
-    <span>Transcript</span>
-    <textarea
-      id="speech-transcript"
-      rows="10"
-      [value]="transcript()"
-      (input)="onTranscriptInput($event)"
-      placeholder="Recognized text will appear here"
-    ></textarea>
-  </label>
-</section>
+      <p
+        class="status"
+        [class.status-live]="isRecording() && isSupported()"
+        [class.status-error]="!isSupported()"
+      >
+        {{ statusMessage() }}
+      </p>
+    </div>
+
+    <label class="transcript-field" for="speech-transcript">
+      <span>Transcript</span>
+      <textarea
+        id="speech-transcript"
+        rows="10"
+        [value]="transcript()"
+        (input)="onTranscriptInput($event)"
+        placeholder="Recognized text will appear here"
+      ></textarea>
+    </label>
+  </section>
+</div>

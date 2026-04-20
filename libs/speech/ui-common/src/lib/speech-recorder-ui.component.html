@@ -1,3 +1,5 @@
+
+
 <section class="recorder-card">
   <div class="toolbar">
     <button
@@ -20,7 +22,7 @@
     class="transcript"
     rows="10"
     [value]="text()"
-    (input)="textChanged.emit(($any($event.target)).value)"
+    (input)="textChanged.emit($any($event.target).value)"
     placeholder="Your recognized speech will appear here."
   ></textarea>
 </section>
