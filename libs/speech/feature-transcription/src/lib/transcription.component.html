@@ -1,13 +1,15 @@
-<ui-speech-transcript-form
-  [transcript]="(transcript$ | async) ?? ''"
-  [isRecording]="(isRecording$ | async) ?? false"
-  [statusMessage]="(statusMessage$ | async) ?? ''"
-  [voiceState]="(voiceState$ | async) ?? 'inactive'"
-  [voiceStateLabel]="voiceStateLabels[(voiceState$ | async) ?? 'inactive']"
+<!-- <ui-speech-transcript-form
+  [transcript]="transcript()"
+  [isRecording]="isRecording()"
+  [statusMessage]="statusMessage()"
+  [voiceState]="voiceState()"
+  [voiceStateLabel]="voiceStateLabel()"
   [isSupported]="isSupported"
-  [showReactivate]="
-    ((voiceState$ | async) ?? 'inactive') === 'inactive' && isSupported
-  "
+  [showReactivate]="showReactivate()"
   (reactivateClicked)="reactivate()"
   (transcriptChange)="updateTranscript($event)"
-/>
+/> -->
+<ui-jarvis-interface
+  [loudness]="microphoneLoudnessLevel()"
+  [voiceState]="voiceState()"
+></ui-jarvis-interface>

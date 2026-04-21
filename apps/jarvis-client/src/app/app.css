@@ -4,7 +4,6 @@
 
 .shell {
   min-height: 100vh;
-  padding: clamp(1.25rem, 3vw, 2rem);
 }
 
 .topbar {

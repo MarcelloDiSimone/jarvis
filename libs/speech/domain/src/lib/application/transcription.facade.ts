@@ -1,6 +1,6 @@
-import { inject, Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { inject, Injectable, signal } from '@angular/core';
 import { AI_COMMAND_GATEWAY } from './ai-command.gateway';
+import { MicrophoneLoudnessService } from '../infrastructure/microphone-loudness.service';
 import { SpeechRecognitionService } from '../infrastructure/speech-recognition.service';
 import { SpeechSynthesisService } from '../infrastructure/speech-synthesis.service';
 
@@ -35,23 +35,23 @@ type TranscriptionMode =
 
 @Injectable({ providedIn: 'root' })
 export class TranscriptionFacade {
+  private readonly microphoneLoudness = inject(MicrophoneLoudnessService);
   private readonly speechRecognition = inject(SpeechRecognitionService);
   private readonly speechSynthesis = inject(SpeechSynthesisService);
   private readonly aiCommandGateway = inject(AI_COMMAND_GATEWAY, { optional: true });
-  private readonly activeTranscriptSubject = new BehaviorSubject<string>('');
-  private readonly isRecordingSubject = new BehaviorSubject<boolean>(false);
-  private readonly statusMessageSubject = new BehaviorSubject<string>(
-    'Waiting for "Jarvis"...',
-  );
-  private readonly voiceStateSubject = new BehaviorSubject<VoiceState>('inactive');
+  private readonly activeTranscriptSignal = signal('');
+  private readonly isRecordingSignal = signal(false);
+  private readonly statusMessageSignal = signal('Waiting for "Jarvis"...');
+  private readonly voiceStateSignal = signal<VoiceState>('inactive');
   private mode: TranscriptionMode = 'idle';
   private pendingTranscript = '';
   private silenceTimeoutId: number | null = null;
 
-  readonly activeTranscript$ = this.activeTranscriptSubject.asObservable();
-  readonly isRecording$ = this.isRecordingSubject.asObservable();
-  readonly statusMessage$ = this.statusMessageSubject.asObservable();
-  readonly voiceState$ = this.voiceStateSubject.asObservable();
+  readonly activeTranscript = this.activeTranscriptSignal.asReadonly();
+  readonly isRecording = this.isRecordingSignal.asReadonly();
+  readonly microphoneLoudnessLevel = this.microphoneLoudness.loudness;
+  readonly statusMessage = this.statusMessageSignal.asReadonly();
+  readonly voiceState = this.voiceStateSignal.asReadonly();
 
   isSupported(): boolean {
     return this.speechRecognition.isSupported();
@@ -59,8 +59,8 @@ export class TranscriptionFacade {
 
   start(): void {
     if (!this.isSupported()) {
-      this.voiceStateSubject.next('inactive');
-      this.statusMessageSubject.next(
+      this.voiceStateSignal.set('inactive');
+      this.statusMessageSignal.set(
         'Speech recognition is not supported in this browser.',
       );
       return;
@@ -70,7 +70,8 @@ export class TranscriptionFacade {
       return;
     }
 
-    this.isRecordingSubject.next(true);
+    this.isRecordingSignal.set(true);
+    void this.microphoneLoudness.start();
     this.startWakeWordListening();
   }
 
@@ -80,13 +81,14 @@ export class TranscriptionFacade {
     this.pendingTranscript = '';
     this.speechRecognition.stop();
     this.speechSynthesis.stop();
-    this.isRecordingSubject.next(false);
-    this.voiceStateSubject.next('inactive');
-    this.statusMessageSubject.next('Voice control stopped.');
+    this.microphoneLoudness.stop();
+    this.isRecordingSignal.set(false);
+    this.voiceStateSignal.set('inactive');
+    this.statusMessageSignal.set('Voice control stopped.');
   }
 
   updateTranscript(transcript: string): void {
-    this.activeTranscriptSubject.next(transcript);
+    this.activeTranscriptSignal.set(transcript);
   }
 
   reactivate(): void {
@@ -96,8 +98,8 @@ export class TranscriptionFacade {
   private startWakeWordListening(): void {
     this.clearSilenceTimeout();
     this.mode = 'wake-listening';
-    this.statusMessageSubject.next('Waiting for "Jarvis"...');
-    this.voiceStateSubject.next('waiting');
+    this.statusMessageSignal.set('Waiting for "Jarvis"...');
+    this.voiceStateSignal.set('waiting');
 
     this.speechRecognition.start(
       {
@@ -116,7 +118,7 @@ export class TranscriptionFacade {
           }
         },
         onError: (error) => {
-          this.statusMessageSubject.next(`Recognition failed: ${error.message}`);
+          this.statusMessageSignal.set(`Recognition failed: ${error.message}`);
 
           if (this.mode === 'wake-listening') {
             this.startWakeWordListening();
@@ -134,8 +136,8 @@ export class TranscriptionFacade {
     this.clearSilenceTimeout();
     this.pendingTranscript = '';
     this.mode = 'command-listening';
-    this.statusMessageSubject.next('Listening for your command...');
-    this.voiceStateSubject.next('recording');
+    this.statusMessageSignal.set('Listening for your command...');
+    this.voiceStateSignal.set('recording');
 
     this.speechRecognition.start(
       {
@@ -155,7 +157,7 @@ export class TranscriptionFacade {
         },
         onError: (error) => {
           this.clearSilenceTimeout();
-          this.statusMessageSubject.next(`Recognition failed: ${error.message}`);
+          this.statusMessageSignal.set(`Recognition failed: ${error.message}`);
           this.startWakeWordListening();
         },
       },
@@ -175,7 +177,7 @@ export class TranscriptionFacade {
       await this.speechSynthesis.speak(ACKNOWLEDGEMENT);
     } catch {
       if (this.mode === 'command-listening') {
-        this.statusMessageSubject.next('Listening for your command...');
+        this.statusMessageSignal.set('Listening for your command...');
       }
     }
   }
@@ -191,14 +193,14 @@ export class TranscriptionFacade {
     this.pendingTranscript = '';
 
     if (transcript) {
-      this.activeTranscriptSubject.next(transcript);
-      this.statusMessageSubject.next('Command captured. Sending to backend...');
-      this.voiceStateSubject.next('waiting');
+      this.activeTranscriptSignal.set(transcript);
+      this.statusMessageSignal.set('Command captured. Sending to backend...');
+      this.voiceStateSignal.set('waiting');
       void this.handleCommand(transcript);
       return;
     }
 
-    this.statusMessageSubject.next('No command detected. Waiting for "Jarvis"...');
+    this.statusMessageSignal.set('No command detected. Waiting for "Jarvis"...');
     this.startWakeWordListening();
   }
 
@@ -327,11 +329,11 @@ export class TranscriptionFacade {
       const responseMessage = response.message || 'Done.';
 
       this.mode = 'acknowledging';
-      this.statusMessageSubject.next(`Backend replied: ${responseMessage}`);
+      this.statusMessageSignal.set(`Backend replied: ${responseMessage}`);
       await this.speakBackendResponse(responseMessage);
     } catch {
       this.mode = 'acknowledging';
-      this.statusMessageSubject.next('Backend unavailable. Responding locally...');
+      this.statusMessageSignal.set('Backend unavailable. Responding locally...');
       await this.speakFailureResponse();
     }
 
@@ -346,7 +348,7 @@ export class TranscriptionFacade {
     try {
       await this.speechSynthesis.speak(response);
     } catch {
-      this.statusMessageSubject.next(`Backend replied: ${response}`);
+      this.statusMessageSignal.set(`Backend replied: ${response}`);
     }
   }
 
@@ -356,9 +358,10 @@ export class TranscriptionFacade {
     this.pendingTranscript = '';
     this.speechRecognition.stop();
     this.speechSynthesis.stop();
-    this.isRecordingSubject.next(false);
-    this.voiceStateSubject.next('inactive');
-    this.statusMessageSubject.next('Sleeping. Press Reactivate to resume listening.');
+    this.microphoneLoudness.stop();
+    this.isRecordingSignal.set(false);
+    this.voiceStateSignal.set('inactive');
+    this.statusMessageSignal.set('Sleeping. Press Reactivate to resume listening.');
   }
 
   private async respondToSleepCommand(): Promise<void> {
@@ -366,23 +369,24 @@ export class TranscriptionFacade {
     this.mode = 'idle';
     this.pendingTranscript = '';
     this.speechRecognition.stop();
-    this.isRecordingSubject.next(false);
-    this.voiceStateSubject.next('inactive');
-    this.statusMessageSubject.next(SLEEP_RESPONSE);
+    this.microphoneLoudness.stop();
+    this.isRecordingSignal.set(false);
+    this.voiceStateSignal.set('inactive');
+    this.statusMessageSignal.set(SLEEP_RESPONSE);
 
     if (this.speechSynthesis.isSupported()) {
       try {
         await this.speechSynthesis.speak(SLEEP_RESPONSE, {
           onStart: () => {
-            this.statusMessageSubject.next(SLEEP_RESPONSE);
+            this.statusMessageSignal.set(SLEEP_RESPONSE);
           },
         });
       } catch {
-        this.statusMessageSubject.next(SLEEP_RESPONSE);
+        this.statusMessageSignal.set(SLEEP_RESPONSE);
       }
     }
 
-    this.statusMessageSubject.next('Sleeping. Press Reactivate to resume listening.');
+    this.statusMessageSignal.set('Sleeping. Press Reactivate to resume listening.');
   }
 
   private isSleepCommand(transcript: string): boolean {
@@ -399,18 +403,18 @@ export class TranscriptionFacade {
 
   private async speakFailureResponse(): Promise<void> {
     if (!this.speechSynthesis.isSupported()) {
-      this.statusMessageSubject.next(FAILURE_RESPONSE);
+      this.statusMessageSignal.set(FAILURE_RESPONSE);
       return;
     }
 
     try {
       await this.speechSynthesis.speak(FAILURE_RESPONSE, {
         onStart: () => {
-          this.statusMessageSubject.next(FAILURE_RESPONSE);
+          this.statusMessageSignal.set(FAILURE_RESPONSE);
         },
       });
     } catch {
-      this.statusMessageSubject.next(FAILURE_RESPONSE);
+      this.statusMessageSignal.set(FAILURE_RESPONSE);
     }
   }
 }

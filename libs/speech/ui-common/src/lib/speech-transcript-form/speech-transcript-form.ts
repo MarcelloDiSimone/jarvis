@@ -4,8 +4,7 @@ import {
   input,
   output,
 } from '@angular/core';
-
-type VoiceState = 'inactive' | 'waiting' | 'recording';
+import type { VoiceState } from '@jarvis/speech-domain';
 
 @Component({
   selector: 'ui-speech-transcript-form',
