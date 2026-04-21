@@ -12,20 +12,17 @@
       "options": {
         "outputPath": "dist/apps/jarvis-client",
         "browser": "apps/jarvis-client/src/main.ts",
+        "index": "apps/jarvis-client/src/index.html",
         "polyfills": ["zone.js"],
         "tsConfig": "apps/jarvis-client/tsconfig.app.json",
+        "outputMode": "static",
         "assets": [
           {
             "glob": "**/*",
             "input": "apps/jarvis-client/public"
           }
         ],
-        "styles": ["apps/jarvis-client/src/styles.css"],
-        "server": "apps/jarvis-client/src/main.server.ts",
-        "ssr": {
-          "entry": "apps/jarvis-client/src/server.ts"
-        },
-        "outputMode": "server"
+        "styles": ["apps/jarvis-client/src/styles.css"]
       },
       "configurations": {
         "production": {
@@ -47,6 +44,9 @@
           "optimization": false,
           "extractLicenses": false,
           "sourceMap": true
+        },
+        "github-pages": {
+          "baseHref": "/jarvis/"
         }
       },
       "defaultConfiguration": "production"
