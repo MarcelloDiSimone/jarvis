@@ -37,7 +37,7 @@ export class SpeechSynthesisService {
     this.stop();
 
     const utterance = new SpeechSynthesisUtterance(trimmedText);
-    const voice = await this.getVoiceByName('Grandpa');
+    const voice = await this.getVoiceByName('Zarvox');
 
     if (voice) {
       utterance.voice = voice;

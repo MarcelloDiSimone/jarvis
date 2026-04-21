@@ -1,17 +1,22 @@
 import { AsyncPipe } from '@angular/common';
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  type OnDestroy,
+} from '@angular/core';
 import { TranscriptionFacade, type VoiceState } from '@jarvis/speech-domain';
-import { SpeechTranscriptFormComponent } from '@jarvis/speech-ui-common';
+import { UiSpeechTranscriptFormComponent } from '@jarvis/speech-ui-common';
 
 @Component({
   standalone: true,
-  imports: [AsyncPipe, SpeechTranscriptFormComponent],
+  imports: [AsyncPipe, UiSpeechTranscriptFormComponent],
   selector: 'speech-feature-transcription-shell',
   templateUrl: './transcription.component.html',
   styleUrls: ['./transcription.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TranscriptionComponent {
+export class FeatureTranscriptionComponent implements OnDestroy {
   private readonly transcriptionFacade = inject(TranscriptionFacade);
   protected readonly transcript$ = this.transcriptionFacade.activeTranscript$;
   protected readonly isRecording$ = this.transcriptionFacade.isRecording$;

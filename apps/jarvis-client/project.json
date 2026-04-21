@@ -2,7 +2,7 @@
   "name": "jarvis-client",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "jarvis",
+  "prefix": "app",
   "sourceRoot": "apps/jarvis-client/src",
   "tags": ["scope:client"],
   "targets": {

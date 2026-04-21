@@ -12,7 +12,7 @@ export default [
         'error',
         {
           type: 'attribute',
-          prefix: 'speechUiCommon',
+          prefix: 'ui',
           style: 'camelCase',
         },
       ],
@@ -20,7 +20,7 @@ export default [
         'error',
         {
           type: 'element',
-          prefix: 'speech-ui-common',
+          prefix: 'ui',
           style: 'kebab-case',
         },
       ],

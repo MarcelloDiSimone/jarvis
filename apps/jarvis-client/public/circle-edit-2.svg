@@ -1,0 +1,234 @@
+<svg id="eI03laV7fhx1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 360 360" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+  project-id="5bbf3e3cc42440fc9ead94bddf6709e0" export-id="741dc69c3c454fc9b466f806cfe77a60"
+  cached="true">
+  <style><![CDATA[
+
+#eI03laV7fhx3_tr {
+  animation: eI03laV7fhx3_tr__tr 60s linear infinite forwards;
+}
+@keyframes eI03laV7fhx3_tr__tr {
+  0% {
+    transform: translate(180px, 180px) rotate(360deg);
+  }
+  50% {
+    transform: translate(180px, 180px) rotate(0deg);
+  }
+  100% {
+    transform: translate(180px, 180px) rotate(-360deg);
+  }
+}
+#eI03laV7fhx41_tr {
+  animation: eI03laV7fhx41_tr__tr 60s linear infinite forwards;
+}
+@keyframes eI03laV7fhx41_tr__tr {
+  0% {
+    transform: translate(180px, 180px) rotate(0deg);
+  }
+  50% {
+    transform: translate(180px, 180px) rotate(360deg);
+  }
+  100% {
+    transform: translate(180px, 180px) rotate(720deg);
+  }
+}
+#eI03laV7fhx43_tr {
+  animation: eI03laV7fhx43_tr__tr 60s linear infinite forwards;
+}
+@keyframes eI03laV7fhx43_tr__tr {
+  0% {
+    transform: translate(180px, 180px) rotate(0deg);
+  }
+  50% {
+    transform: translate(180px, 180px) rotate(-360deg);
+  }
+  100% {
+    transform: translate(180px, 180px) rotate(-720deg);
+  }
+}
+#eI03laV7fhx45_tr {
+  animation: eI03laV7fhx45_tr__tr 60s linear infinite forwards;
+}
+@keyframes eI03laV7fhx45_tr__tr {
+  0% {
+    transform: translate(180px, 180px) rotate(0deg);
+  }
+  50% {
+    transform: translate(180px, 180px) rotate(180deg);
+  }
+  100% {
+    transform: translate(180px, 180px) rotate(360deg);
+  }
+}
+#eI03laV7fhx45_ts {
+  animation: eI03laV7fhx45_ts__ts 60s linear infinite forwards;
+}
+@keyframes eI03laV7fhx45_ts__ts {
+  0% {
+    transform: scale(1, 1);
+  }
+  12% {
+    transform: scale(1.1, 1.1);
+  }
+  25% {
+    transform: scale(1, 1);
+  }
+  38% {
+    transform: scale(0.9, 0.9);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  62% {
+    transform: scale(1.1, 1.1);
+  }
+  75% {
+    transform: scale(1, 1);
+  }
+  88% {
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+]]></style>
+  <defs>
+    <filter id="eI03laV7fhx41-filter" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="1,1" result="result" />
+    </filter>
+    <filter id="eI03laV7fhx42-filter" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5,5" />
+      <feOffset dx="2" dy="2" result="tmp" />
+      <feFlood flood-color="#000" />
+      <feComposite operator="in" in2="tmp" />
+      <feMerge result="result">
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g>
+    <g id="eI03laV7fhx3_tr" transform="translate(180,179.998805) rotate(360)">
+      <g transform="translate(-180,-179.998805)">
+        <path
+          d="M350,180c0,93.888407-76.111593,170-170,170s-170-76.111593-170-170s76.111593-170,170-170s170,76.111593,170,170Z"
+          fill="none" stroke="#7daf00" stroke-dasharray="8,4" />
+        <line x1="340" y1="180" x2="350" y2="180" fill="none" stroke="#7daf00" />
+        <line x1="337.57001" y1="207.78" x2="347.42001" y2="209.52" fill="none"
+          stroke="#7daf00" />
+        <line x1="330.35001" y1="234.72" x2="339.75" y2="238.14" fill="none"
+          stroke="#7daf00" />
+        <line x1="318.56" y1="260" x2="327.22" y2="265" fill="none"
+          stroke="#7daf00" />
+        <line x1="302.57001" y1="282.84" x2="310.23001" y2="289.26999" fill="none"
+          stroke="#7daf00" />
+        <line x1="282.85001" y1="302.56" x2="289.26999" y2="310.23001" fill="none"
+          stroke="#7daf00" />
+        <line x1="260" y1="318.56" x2="265" y2="327.22" fill="none"
+          stroke="#7daf00" />
+        <line x1="234.72" y1="330.35001" x2="238.14" y2="339.75" fill="none"
+          stroke="#7daf00" />
+        <line x1="207.78" y1="337.57001" x2="209.52" y2="347.41" fill="none"
+          stroke="#7daf00" />
+        <line x1="180" y1="340" x2="180" y2="350" fill="none" stroke="#7daf00" />
+        <line x1="152.22" y1="337.57001" x2="150.48" y2="347.41" fill="none"
+          stroke="#7daf00" />
+        <line x1="125.28" y1="330.35001" x2="121.86" y2="339.75" fill="none"
+          stroke="#7daf00" />
+        <line x1="100" y1="318.56" x2="95" y2="327.22" fill="none"
+          stroke="#7daf00" />
+        <line x1="77.153999" y1="302.56" x2="70.725998" y2="310.23001" fill="none"
+          stroke="#7daf00" />
+        <line x1="57.432999" y1="282.84" x2="49.771999" y2="289.26999" fill="none"
+          stroke="#7daf00" />
+        <line x1="41.436001" y1="260" x2="32.776001" y2="265" fill="none"
+          stroke="#7daf00" />
+        <line x1="29.649" y1="234.72" x2="20.252001" y2="238.14" fill="none"
+          stroke="#7daf00" />
+        <line x1="22.431" y1="207.78" x2="12.583" y2="209.52" fill="none"
+          stroke="#7daf00" />
+        <line x1="20" y1="180" x2="10" y2="180" fill="none" stroke="#7daf00" />
+        <line x1="22.431" y1="152.21001" x2="12.583" y2="150.48" fill="none"
+          stroke="#7daf00" />
+        <line x1="29.649" y1="125.27" x2="20.252001" y2="121.85" fill="none"
+          stroke="#7daf00" />
+        <line x1="41.436001" y1="99.998001" x2="32.776001" y2="94.998001" fill="none"
+          stroke="#7daf00" />
+        <line x1="57.432999" y1="77.152" x2="49.771999" y2="70.723999" fill="none"
+          stroke="#7daf00" />
+        <line x1="77.153999" y1="57.431" x2="70.725998" y2="49.77" fill="none"
+          stroke="#7daf00" />
+        <line x1="100" y1="41.433998" x2="95" y2="32.772999" fill="none"
+          stroke="#7daf00" />
+        <line x1="125.28" y1="29.646999" x2="121.86" y2="20.25" fill="none"
+          stroke="#7daf00" />
+        <line x1="152.22" y1="22.427999" x2="150.48" y2="12.58" fill="none"
+          stroke="#7daf00" />
+        <line x1="180" y1="19.997999" x2="180" y2="9.9976" fill="none"
+          stroke="#7daf00" />
+        <line x1="207.78" y1="22.427999" x2="209.52" y2="12.58" fill="none"
+          stroke="#7daf00" />
+        <line x1="234.72" y1="29.646999" x2="238.14" y2="20.25" fill="none"
+          stroke="#7daf00" />
+        <line x1="260" y1="41.433998" x2="265" y2="32.772999" fill="none"
+          stroke="#7daf00" />
+        <line x1="282.85001" y1="57.431" x2="289.26999" y2="49.77" fill="none"
+          stroke="#7daf00" />
+        <line x1="302.57001" y1="77.152" x2="310.23001" y2="70.723999" fill="none"
+          stroke="#7daf00" />
+        <line x1="318.56" y1="99.998001" x2="327.22" y2="94.998001" fill="none"
+          stroke="#7daf00" />
+        <line x1="330.35001" y1="125.27" x2="339.75" y2="121.85" fill="none"
+          stroke="#7daf00" />
+        <line x1="337.57001" y1="152.21001" x2="347.42001" y2="150.48" fill="none"
+          stroke="#7daf00" />
+      </g>
+    </g>
+    <g id="eI03laV7fhx41_tr" transform="translate(180,180.039993) rotate(0)">
+      <circle r="140" transform="translate(0,0.000007)" filter="url(#eI03laV7fhx41-filter)"
+        fill="none" stroke="#7daf00" stroke-width="1.5"
+        stroke-dasharray="20,10,5,10" />
+    </g>
+    <circle r="73.333" transform="translate(180 180)" filter="url(#eI03laV7fhx42-filter)"
+      fill="none" stroke="#7daf00" />
+    <g id="eI03laV7fhx43_tr" transform="translate(179.11,179.812001) rotate(0)">
+      <g transform="translate(-180,-180)">
+        <circle r="110" transform="translate(180 180)" fill="none"
+          stroke="#7daf00" stroke-width="2" stroke-dasharray="3,12" />
+      </g>
+    </g>
+    <g id="eI03laV7fhx45_tr" transform="translate(179.11,179.812001) rotate(0)">
+      <g id="eI03laV7fhx45_ts" transform="scale(1,1)">
+        <g transform="translate(-297,34.001999)">
+          <circle r="1.5" transform="translate(392.26 20.996)" fill="none"
+            stroke="#7daf00" />
+          <circle r="1.5" transform="translate(352 61.266)" fill="none"
+            stroke="#7daf00" />
+          <circle r="1.5" transform="translate(297 75.996)" fill="none"
+            stroke="#7daf00" />
+          <circle r="1.5" transform="translate(242 61.266)" fill="none"
+            stroke="#7daf00" />
+          <circle r="1.5" transform="translate(201.737 20.996)" fill="none"
+            stroke="#7daf00" />
+          <circle r="1.5" transform="translate(187 -34.004)" fill="none"
+            stroke="#7daf00" />
+          <circle r="1.5" transform="translate(201.737 -89.004)" fill="none"
+            stroke="#7daf00" />
+          <circle r="1.5" transform="translate(242 -129.263)" fill="none"
+            stroke="#7daf00" />
+          <circle r="1.5" transform="translate(297 -144)" fill="none"
+            stroke="#7daf00" />
+          <circle r="1.5" transform="translate(352 -129.263)" fill="none"
+            stroke="#7daf00" />
+          <circle r="1.5" transform="translate(392.26 -89.004)" fill="none"
+            stroke="#7daf00" />
+          <circle r="1.5" transform="translate(407 -34.004)" fill="none"
+            stroke="#7daf00" />
+        </g>
+      </g>
+    </g>
+  </g>
+
+</svg>

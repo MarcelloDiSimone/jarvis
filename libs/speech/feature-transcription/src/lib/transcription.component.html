@@ -1,11 +1,13 @@
-<speech-ui-common-transcript-form
+<ui-speech-transcript-form
   [transcript]="(transcript$ | async) ?? ''"
   [isRecording]="(isRecording$ | async) ?? false"
   [statusMessage]="(statusMessage$ | async) ?? ''"
   [voiceState]="(voiceState$ | async) ?? 'inactive'"
   [voiceStateLabel]="voiceStateLabels[(voiceState$ | async) ?? 'inactive']"
   [isSupported]="isSupported"
-  [showReactivate]="((voiceState$ | async) ?? 'inactive') === 'inactive' && isSupported"
+  [showReactivate]="
+    ((voiceState$ | async) ?? 'inactive') === 'inactive' && isSupported
+  "
   (reactivateClicked)="reactivate()"
   (transcriptChange)="updateTranscript($event)"
 />

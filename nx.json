@@ -102,16 +102,23 @@
     "@nx/angular:application": {
       "e2eTestRunner": "playwright",
       "linter": "eslint",
-      "style": "css",
+      "prefix": "app",
+      "style": "scss",
       "unitTestRunner": "vitest-analog"
     },
     "@nx/angular:library": {
+      "changeDetection": "OnPush",
+      "displayBlock": true,
       "linter": "eslint",
-      "unitTestRunner": "vitest-analog",
-      "strict": false
+      "prefix": "lib",
+      "style": "scss",
+      "unitTestRunner": "vitest-analog"
     },
     "@nx/angular:component": {
-      "style": "css"
+      "changeDetection": "OnPush",
+      "displayBlock": true,
+      "export": true,
+      "style": "scss"
     }
   },
   "analytics": false

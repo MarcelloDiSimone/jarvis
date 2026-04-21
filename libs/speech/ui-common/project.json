@@ -2,7 +2,7 @@
   "name": "speech-ui-common",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/speech/ui-common/src",
-  "prefix": "speech-ui-common",
+  "prefix": "ui",
   "projectType": "library",
   "tags": ["domain:speech", "scope:client", "type:ui"],
   "targets": {

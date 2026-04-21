@@ -8,13 +8,13 @@ import {
 type VoiceState = 'inactive' | 'waiting' | 'recording';
 
 @Component({
-  selector: 'speech-ui-common-transcript-form',
+  selector: 'ui-speech-transcript-form',
   standalone: true,
-  templateUrl: './speech-transcript-form.component.html',
-  styleUrl: './speech-transcript-form.component.scss',
+  templateUrl: './speech-transcript-form.html',
+  styleUrl: './speech-transcript-form.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SpeechTranscriptFormComponent {
+export class UiSpeechTranscriptFormComponent {
   readonly transcript = input('');
   readonly isRecording = input(false);
   readonly isSupported = input(true);
