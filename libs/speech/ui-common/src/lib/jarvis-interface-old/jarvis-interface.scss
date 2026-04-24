@@ -1,0 +1,242 @@
+@property --opacity {
+  initial-value: 0;
+  inherits: false;
+  syntax: '<number>';
+}
+
+@property --loudness {
+  initial-value: 0;
+  inherits: true;
+  syntax: '<number>';
+}
+
+:host {
+  --color-stroke: #7daf00;
+  --color-accent: #55fff0;
+  --color-background: #050805;
+  --color-hot: #ff4bd8;
+  --loudness: 0;
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+  overflow: hidden;
+  color: #ffffff;
+  transition: --opacity 1s ease-in;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, var(--opacity)) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  background-blend-mode: multiply;
+
+  svg {
+    display: block;
+    overflow: visible;
+    width: min(100vw, 100dvh);
+    max-width: 100%;
+    max-height: 100dvh;
+    height: auto;
+    aspect-ratio: 1;
+  }
+}
+
+line,
+path,
+rect,
+circle,
+polyline,
+polygon {
+  stroke: var(--color-stroke);
+  fill: none;
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke 1s linear;
+}
+
+#caption path {
+  stroke-width: 0.8;
+}
+
+:host(.recording) {
+  --opacity: 0.16;
+
+  #caption path {
+    animation: neon 1.5s linear forwards;
+    fill: #ffffff;
+  }
+
+  line,
+  path,
+  rect,
+  circle,
+  polyline,
+  polygon {
+    --color-stroke: #f0ffb0;
+  }
+
+  #circle-group {
+    opacity: 1;
+  }
+}
+
+#circle-group {
+  transition:
+    opacity 80ms linear,
+    transform 180ms ease-out;
+  transform: scale(calc(1 + (var(--loudness) * 0.14)));
+  opacity: calc(0.25 + (var(--loudness) * 0.5));
+  transform-origin: center;
+  will-change: opacity, transform;
+}
+
+#outer-circle,
+#inner-circle,
+#signal-crown {
+  animation: rotate-cw 60s linear infinite forwards;
+  transform-origin: center;
+  will-change: transform;
+}
+
+#inner-circle {
+  animation-duration: 28s;
+}
+
+#center-circle,
+#rotating-circles {
+  animation: rotate-ccw 42s linear infinite forwards;
+  transform-origin: center;
+  will-change: transform;
+}
+
+#rotating-circles {
+  animation-duration: 24s;
+}
+
+#bouncing-circles {
+  animation: breathe 620ms ease-in-out infinite alternate;
+  transform-origin: center;
+  will-change: opacity, transform;
+}
+
+#main-circle {
+  stroke-opacity: 0.25;
+}
+
+#main-circle path {
+  stroke-width: 1.25;
+}
+
+.accent {
+  stroke: var(--color-accent);
+  opacity: 0.58;
+}
+
+.hot {
+  stroke: var(--color-hot);
+  opacity: 0.38;
+}
+
+.bevel-fill {
+  fill: url(#bevel-fill);
+  stroke: none;
+}
+
+.thin {
+  stroke-width: 0.7;
+}
+
+.medium {
+  stroke-width: 1.35;
+}
+
+.heavy {
+  stroke-width: 2;
+}
+
+.ghost {
+  opacity: 0.22;
+}
+
+.soft {
+  opacity: 0.48;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #jarvis-interface-future * {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+@keyframes rotate-ccw {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(-720deg);
+  }
+}
+
+@keyframes breathe {
+  from {
+    opacity: 0.58;
+    transform: scale(calc(0.96 + (var(--loudness) * 0.04)));
+  }
+  to {
+    opacity: 1;
+    transform: scale(calc(1.02 + (var(--loudness) * 0.08)));
+  }
+}
+
+@keyframes rotate-cw {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes neon {
+  0% {
+    fill-opacity: 0;
+  }
+  1% {
+    fill-opacity: 1;
+  }
+  10% {
+    fill-opacity: 0;
+  }
+  15% {
+    fill-opacity: 1;
+  }
+  25% {
+    fill-opacity: 1;
+  }
+  26% {
+    fill-opacity: 0;
+  }
+  27% {
+    fill-opacity: 1;
+  }
+  28% {
+    fill-opacity: 0;
+  }
+  29% {
+    fill-opacity: 0;
+  }
+  40% {
+    fill-opacity: 1;
+  }
+  41% {
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}

@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import {
   calculateLoudness,
+  MICROPHONE_LOUDNESS_CONSTRAINTS,
   MicrophoneLoudnessService,
 } from './microphone-loudness.service';
 
@@ -11,6 +12,16 @@ describe('MicrophoneLoudnessService', () => {
     const service = TestBed.inject(MicrophoneLoudnessService);
 
     expect(service).toBeTruthy();
+  });
+
+  it('requests raw microphone audio without browser voice processing', () => {
+    expect(MICROPHONE_LOUDNESS_CONSTRAINTS).toEqual({
+      audio: {
+        autoGainControl: false,
+        echoCancellation: false,
+        noiseSuppression: false,
+      },
+    });
   });
 });
 

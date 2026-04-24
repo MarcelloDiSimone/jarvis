@@ -2,6 +2,14 @@ import { Injectable, signal } from '@angular/core';
 
 const LOUDNESS_BOOST = 4;
 
+export const MICROPHONE_LOUDNESS_CONSTRAINTS: MediaStreamConstraints = {
+  audio: {
+    autoGainControl: false,
+    echoCancellation: false,
+    noiseSuppression: false,
+  },
+};
+
 type WindowWithWebkitAudioContext = Window &
   typeof globalThis & {
     webkitAudioContext?: typeof AudioContext;
@@ -57,7 +65,9 @@ export class MicrophoneLoudnessService {
     }
 
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const stream = await navigator.mediaDevices.getUserMedia(
+        MICROPHONE_LOUDNESS_CONSTRAINTS,
+      );
 
       if (startToken !== this.startToken) {
         stream.getTracks().forEach((track) => track.stop());

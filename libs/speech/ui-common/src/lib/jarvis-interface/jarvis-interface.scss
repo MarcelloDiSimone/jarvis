@@ -10,12 +10,20 @@
   syntax: '<number>';
 }
 
+@property --scale {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 1;
+}
+
 :host {
-  --color-stroke: #7daf00;
+  --color-fill: #1e9dcb88;
+  --color-stroke: #1e9dcb88;
   --color-accent: #55fff0;
   --color-background: #050805;
   --color-hot: #ff4bd8;
   --loudness: 0;
+
   display: grid;
   place-items: center;
   min-height: 100dvh;
@@ -35,7 +43,7 @@
     overflow: visible;
     width: min(100vw, 100dvh);
     max-width: 100%;
-    max-height: 100dvh;
+    max-height: 90dvh;
     height: auto;
     aspect-ratio: 1;
   }
@@ -46,17 +54,89 @@ path,
 rect,
 circle,
 polyline,
-polygon {
+polygon,
+use {
   stroke: var(--color-stroke);
   fill: none;
   vector-effect: non-scaling-stroke;
-  stroke-linecap: round;
-  stroke-linejoin: round;
   transition: stroke 1s linear;
 }
 
+.ornament {
+  fill: var(--color-fill);
+  stroke: none;
+}
+
 #caption path {
-  stroke-width: 0.8;
+  stroke-width: 3;
+  fill: #fff;
+  fill-opacity: 0.1;
+}
+
+#amplitute-circle {
+  --ray-origin-y: 277.77715;
+}
+
+#amplitute-circle-base {
+  fill: var(--color-fill);
+  stroke: none;
+}
+
+#amplitute-circle > * {
+  transform-box: view-box;
+  transform-origin: 0 calc(var(--ray-origin-y) * 1px);
+  transform: matrix(
+    var(--a),
+    var(--b),
+    calc(var(--c) * var(--scale)),
+    calc(var(--d) * var(--scale)),
+    var(--e),
+    var(--f)
+  );
+
+  animation: ray-pulse 900ms infinite;
+  animation-delay: calc(var(--delay) * -1);
+}
+
+#circle-dots-inner-base {
+  fill: var(--color-fill);
+  stroke: none;
+}
+
+#circle-dots-inner {
+  transform-origin: 0 calc(var(--ray-origin-y) * 1px);
+  animation: rotate-ccw 10s infinite alternate-reverse;
+}
+
+#circle-double-inner-1 {
+  --radius-growth-factor: 0.064516;
+  transform: scale(calc(1 + var(--loudness) * var(--radius-growth-factor)));
+  transform-box: view-box;
+  transform-origin: 400px 400px;
+}
+
+#circle-double-inner-2 {
+  --radius-growth-factor: 0.095;
+  transform: scale(calc(1 + var(--loudness) * var(--radius-growth-factor)));
+  transform-box: view-box;
+  transform-origin: 400px 400px;
+}
+
+#circle-dashed-inner-0,
+#circle-dashed-inner-1,
+#circle-dashed-inner-2 {
+  fill: none;
+  stroke-dasharray: 21.89801066, 10.51110816;
+  stroke: var(--color-stroke);
+  transform-origin: 400px 400px;
+  animation: rotate-cw 10s infinite alternate-reverse;
+}
+
+#circle-dashed-inner-1 {
+  animation-delay: 500ms;
+}
+#circle-dashed-inner-2 {
+  animation-delay: 1s;
 }
 
 :host(.recording) {
@@ -72,95 +152,11 @@ polygon {
   rect,
   circle,
   polyline,
-  polygon {
-    --color-stroke: #f0ffb0;
+  polygon,
+  use {
+    --color-fill: #1e9dcbff;
+    --color-stroke: #1e9dcbff;
   }
-
-  #circle-group {
-    opacity: 1;
-  }
-}
-
-#circle-group {
-  transition:
-    opacity 80ms linear,
-    transform 180ms ease-out;
-  transform: scale(calc(1 + (var(--loudness) * 0.14)));
-  opacity: calc(0.25 + (var(--loudness) * 0.5));
-  transform-origin: center;
-  will-change: opacity, transform;
-}
-
-#outer-circle,
-#inner-circle,
-#signal-crown {
-  animation: rotate-cw 60s linear infinite forwards;
-  transform-origin: center;
-  will-change: transform;
-}
-
-#inner-circle {
-  animation-duration: 28s;
-}
-
-#center-circle,
-#rotating-circles {
-  animation: rotate-ccw 42s linear infinite forwards;
-  transform-origin: center;
-  will-change: transform;
-}
-
-#rotating-circles {
-  animation-duration: 24s;
-}
-
-#bouncing-circles {
-  animation: breathe 620ms ease-in-out infinite alternate;
-  transform-origin: center;
-  will-change: opacity, transform;
-}
-
-#main-circle {
-  stroke-opacity: 0.25;
-}
-
-#main-circle path {
-  stroke-width: 1.25;
-}
-
-.accent {
-  stroke: var(--color-accent);
-  opacity: 0.58;
-}
-
-.hot {
-  stroke: var(--color-hot);
-  opacity: 0.38;
-}
-
-.bevel-fill {
-  fill: url(#bevel-fill);
-  stroke: none;
-}
-
-.thin {
-  stroke-width: 0.7;
-}
-
-.medium {
-  stroke-width: 1.35;
-}
-
-.heavy {
-  stroke-width: 2;
-}
-
-.ghost {
-  opacity: 0.22;
-}
-
-.soft {
-  opacity: 0.48;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -170,26 +166,26 @@ polygon {
   }
 }
 
+@keyframes ray-pulse {
+  0% {
+    --scale: 1;
+  }
+
+  8% {
+    --scale: calc(1 + var(--loudness) * var(--factor, 1) * 2);
+  }
+
+  100% {
+    --scale: 1;
+  }
+}
+
 @keyframes rotate-ccw {
   0% {
     transform: rotate(0deg);
   }
-  50% {
-    transform: rotate(-360deg);
-  }
   100% {
-    transform: rotate(-720deg);
-  }
-}
-
-@keyframes breathe {
-  from {
-    opacity: 0.58;
-    transform: scale(calc(0.96 + (var(--loudness) * 0.04)));
-  }
-  to {
-    opacity: 1;
-    transform: scale(calc(1.02 + (var(--loudness) * 0.08)));
+    transform: rotate(-360deg);
   }
 }
 
@@ -199,6 +195,17 @@ polygon {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes breathe {
+  from {
+    opacity: 0.58;
+    transform: scale(calc(0.96 + (var(--loudness) * 0.04 * var(--factor))));
+  }
+  to {
+    opacity: 1;
+    transform: scale(calc(1.02 + (var(--loudness) * 0.08 * var(--factor))));
   }
 }
 

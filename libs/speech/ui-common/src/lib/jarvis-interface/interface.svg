@@ -1,0 +1,483 @@
+<svg version="1.1" viewBox="0 0 320 320" xml:space="preserve">
+  <g id="jarvise-logo" style="stroke-width: 3px">
+    <path
+      d="m85.381 146.66v21.535a0.6 0.6 0 0 1-0.222 0.483 0.65 0.65 0 0 1-0.48 0.185h-16.387a0.74 0.74 0 0 1-0.482-0.185 0.65 0.65 0 0 1-0.186-0.483v-2.668h-4.447v2.817q0 1.371 0.666 2.521a4.9 4.9 0 0 0 1.817 1.817 4.93 4.93 0 0 0 2.521 0.666h16.684q1.37 0 2.482-0.666a4.9 4.9 0 0 0 1.817-1.817q0.705-1.15 0.705-2.521v-21.684zm22.02 0q-1.373 0-2.522 0.666a4.9 4.9 0 0 0-1.816 1.817 4.93 4.93 0 0 0-0.666 2.521v21.684h4.447v-9.155h17.756v9.155h4.486v-21.684q0-1.371-0.705-2.521a4.9 4.9 0 0 0-1.816-1.817q-1.111-0.66701-2.482-0.666zm66.32 0 12.875 22.226 2.584 4.462h4.15l15.46-26.688h-5.155l-12.38 21.461-12.344-21.46zm41.965 0v26.688h4.412v-26.688zm21.389 0q-1.372 0-2.52 0.666a5 5 0 0 0-1.78 1.817 4.93 4.93 0 0 0-0.667 2.521v5.598q0 1.37 0.668 2.52a5.44 5.44 0 0 0 1.78 1.816 4.93 4.93 0 0 0 2.519 0.66801h16.533q0.297 0 0.482 0.185 0.223 0.185 0.223 0.444v5.3a0.6 0.6 0 0 1-0.223 0.483 0.65 0.65 0 0 1-0.482 0.185h-16.385a0.65 0.65 0 0 1-0.48-0.185 0.65 0.65 0 0 1-0.186-0.483v-1.63h-4.45v1.779q0 1.371 0.669 2.521a5 5 0 0 0 1.78 1.817 4.9 4.9 0 0 0 2.519 0.666h16.718q1.372 0 2.485-0.666a4.9 4.9 0 0 0 1.816-1.817q0.704-1.15 0.703-2.521v-5.598a4.54 4.54 0 0 0-0.703-2.482 4.9 4.9 0 0 0-1.816-1.817 4.55 4.55 0 0 0-2.485-0.70499h-16.57a0.65 0.65 0 0 1-0.48-0.18501 0.6 0.6 0 0 1-0.186-0.444v-5.3q0-0.298 0.186-0.483a0.65 0.65 0 0 1 0.48-0.185h16.385q0.297 0 0.482 0.185a0.6 0.6 0 0 1 0.223 0.483v1.63h4.484v-1.779q1e-3 -1.371-0.703-2.521a4.9 4.9 0 0 0-1.816-1.817q-1.113-0.66701-2.485-0.666zm-95.46 0.035v26.653h4.448v-9.303l9.32-0.02 7.807 9.323h5.004v-1.037l-6.998-8.3 2.103-3e-3q1.372 0 2.485-0.668a4.9 4.9 0 0 0 1.816-1.816q0.705-1.15 0.705-2.483v-7.34q0-1.372-0.705-2.484a4.9 4.9 0 0 0-1.816-1.817 4.55 4.55 0 0 0-2.485-0.705zm-34.103 4.45h16.385q0.296 0 0.48 0.185a0.6 0.6 0 0 1 0.223 0.483v7.931h-17.755v-7.931q0-0.298 0.186-0.483a0.74 0.74 0 0 1 0.482-0.185m39.219 0h16.385q0.296 0 0.48 0.22201a0.56 0.56 0 0 1 0.223 0.44599v7.043a0.6 0.6 0 0 1-0.223 0.48 0.65 0.65 0 0 1-0.48 0.186h-16.385a0.74 0.74 0 0 1-0.482-0.186 0.65 0.65 0 0 1-0.186-0.48v-7.043q0-0.26 0.186-0.44599 0.222-0.22201 0.482-0.22201m-52.787 17.793v4.41h4.412v-4.41zm39.293 0v4.41h4.412v-4.41zm38.887 0v4.41h4.41v-4.41zm35.482 0v4.41h4.41v-4.41zm16.236 0v4.41h4.41v-4.41z" />
+  </g>
+
+  <g id="amplitute">
+    <path id="amplitute-circle-base" style="fill: var(--color-fill); stroke: none"
+      d="m162.28 107.59 0.61507 0.0215-0.21479 6.1506-0.61506-0.0215z" />
+    <use transform="rotate(-2,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-4,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-6,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-8,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-10,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-12,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-14,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-16,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-18,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-20,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-22,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-24,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-26,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-28,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-30,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-32,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-34,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-36,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-38,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-40,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-42,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-44,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-46,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-48,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-50,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-52,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-54,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-56,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-58,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-60,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-62,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-64,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-66,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-68,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-70,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-72,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-74,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-76,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-78,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-80,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-82,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-84,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-86,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-88,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-90,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-92,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-94,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-96,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(-98,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(260 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(258 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(256 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(254 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(252 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(250 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(248 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(246 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(244 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(242 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(240 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(238 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(236 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(234 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(232 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(230 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(228 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(226 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(224 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(222 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(220 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(218 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(216 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(214 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(212 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(210 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(208 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(206 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(204 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(202 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(200 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(198 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(196 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(194 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(192 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(190 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(188 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(186 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(184 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(182 160 160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(180,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(178,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(176,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(174,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(172,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(170,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(168,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(166,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(164,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(162,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(160,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(158,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(156,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(154,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(152,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(150,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(148,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(146,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(144,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(142,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(140,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(138,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(136,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(134,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(132,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(130,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(128,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(126,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(124,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(122,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(120,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(118,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(116,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(114,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(112,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(110,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(108,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(106,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(104,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(102,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(100,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(98,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(96,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(94,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(92,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(90,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(88,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(86,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(84,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(82,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(80,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(78,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(76,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(74,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(72,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(70,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(68,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(66,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(64,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(62,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(60,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(58,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(56,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(54,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(52,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(50,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(48,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(46,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(44,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(42,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(40,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(38,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(36,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(34,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(32,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(30,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(28,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(26,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(24,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(22,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(20,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(18,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(16,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(14,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(12,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(10,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(8,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(6,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(4,160,160)" xlink:href="#amplitute-circle-base" />
+    <use transform="rotate(2,160,160)" xlink:href="#amplitute-circle-base" />
+  </g>
+
+  <g id="circle-double-inner">
+    <path
+      d="m160.99 95.282c-35.739 0-64.716 28.98-64.716 64.718s28.977 64.716 64.716 64.716 64.718-28.978 64.718-64.716-28.98-64.718-64.718-64.718m0 0.572c35.43 0 64.146 28.716 64.146 64.146s-28.717 64.145-64.147 64.145-64.144-28.714-64.144-64.144 28.714-64.146 64.144-64.146" />
+    <path
+      d="m160.99 93.853c-36.53 0-66.15 29.62-66.15 66.149s29.62 66.147 66.15 66.147 66.15-29.617 66.15-66.147-29.62-66.15-66.15-66.15m0 0.573c36.22 0 65.577 29.356 65.577 65.576s-29.357 65.577-65.577 65.577-65.577-29.356-65.577-65.577 29.357-65.576 65.577-65.576" />
+  </g>
+
+  <g id="circle-dots-inner">
+    <path id="circle-dot-base" d="m233.63 156.31c0 1.3127-2.0071 1.3127-2.0071 0a1.0035 1.0035 0 0 1 2.0071 0" />
+    <use transform="translate(-.28967 -3.7147)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-2 20.014 174.7)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-4 73.391 171.45)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-6 91.292 170.96)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-8 100.3 171.17)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-10 105.83 171.63)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-12 109.63 172.24)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-14 112.34 172.92)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-16 114.51 173.65)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-18 116.24 174.41)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-20 117.76 175.18)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-22 119.07 175.96)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-24 120.15 176.75)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-26 121.23 177.55)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-28 122.21 178.34)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-30 123.08 179.12)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-32 123.95 179.91)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-34 124.82 180.69)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-36 125.57 181.47)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-38 126.44 182.24)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-40 127.2 183)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-42 127.96 183.76)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-44 128.72 184.51)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-46 129.48 185.25)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-48 130.24 185.98)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-50 131 186.69)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-52 131.76 187.41)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-54 132.52 188.1)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-56 133.28 188.79)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-58 134.15 189.46)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-60 134.9 190.12)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-62 135.66 190.77)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-64 136.53 191.4)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-66 137.4 192.02)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-68 138.16 192.63)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-70 139.03 193.22)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-72 139.9 193.8)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-74 140.76 194.36)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-76 141.63 194.9)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-78 142.5 195.44)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-80 143.48 195.95)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-82 144.34 196.44)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-84 145.32 196.92)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-86 146.19 197.39)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-88 147.16 197.83)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(-90 148.14 198.26)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(268 149.12 198.67)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(266 150.09 199.06)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(264 151.07 199.43)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(262 152.05 199.78)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(260 153.13 200.11)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(258 154.11 200.43)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(256 155.08 200.71)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(254 156.17 200.98)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(252 157.25 201.23)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(250 158.34 201.47)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(248 159.31 201.67)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(246 160.4 201.86)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(244 161.48 202.02)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(242 162.68 202.16)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(240 163.76 202.28)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(238 164.85 202.38)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(236 165.93 202.46)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(234 167.13 202.5)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(232 168.21 202.52)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(230 169.4 202.53)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(228 170.49 202.51)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(226 171.68 202.46)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(224 172.88 202.39)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(222 173.96 202.29)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(220 175.15 202.16)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(218 176.35 202.02)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(216 177.54 201.85)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(214 178.73 201.64)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(212 179.93 201.41)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(210 181.12 201.16)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(208 182.31 200.88)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(206 183.51 200.58)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(204 184.7 200.24)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(202 185.89 199.87)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(200 187.09 199.48)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(198 188.28 199.06)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(196 189.48 198.61)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(194 190.67 198.14)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(192 191.86 197.63)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(190 193.16 197.1)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(188 194.36 196.53)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(186 195.55 195.93)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(184 196.74 195.31)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(182 197.94 194.64)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(180 199.13 193.95)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(178 200.32 193.23)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(176 201.52 192.47)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(174 202.71 191.69)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(172 203.9 190.87)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(170 205.1 190.02)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(168 206.29 189.13)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(166 207.48 188.22)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(164 208.68 187.27)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(162 209.87 186.28)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(160 210.96 185.25)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(158 212.15 184.19)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(156 213.34 183.09)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(154 214.43 181.96)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(152 215.62 180.79)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(150 216.71 179.57)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(148 217.9 178.33)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(146 218.98 177.04)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(144 220.07 175.71)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(142 221.15 174.35)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(140 222.24 172.94)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(138 223.32 171.47)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(136 224.41 169.97)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(134 225.49 168.43)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(132 226.58 166.85)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(130 227.56 165.21)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(128 228.64 163.53)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(126 229.62 161.79)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(124 230.7 160.01)" xlink:href="#circle-dot-base" />
+    <use transform="rotate(122 231.68 158.18)" xlink:href="#circle-dot-base" />
+  </g>
+
+  <g id="circle-dashed-inner">
+    <path id="circle-dashed-base"
+      d="m146.84 79.248c-5.6874 0.99714-11.272 2.5849-16.626 4.7462l0.0991 0.24564c7.1164-2.8723 14.64-4.7292 22.271-5.5285 6.9142-0.724 13.922-0.56125 20.793 0.49413 7.2913 1.1169 14.427 3.2352 21.15 6.2687l0.10912-0.24072a81.755 81.755 0 0 0-21.219-6.289 81.623 81.623 0 0 0-20.861-0.49632 83.343 83.343 0 0 0-5.717 0.79992m-23.84 8.073a81.491 81.491 0 0 0-14.196 9.4176c-6.2133 5.1292-11.662 11.181-16.121 17.891-4.612 6.9338-8.1675 14.57-10.49 22.568l0.25401 0.0736c2.3153-7.9716 5.8595-15.584 10.457-22.496 4.4449-6.6879 9.876-12.72 16.069-17.833a81.226 81.226 0 0 1 14.151-9.3871zm78.711 1.5218-0.13153 0.22946a82.179 82.179 0 0 1 19.581 15.606 81.358 81.358 0 0 1 12.508 17.884c2.8978 5.6237 5.1307 11.588 6.6524 17.728l0.25663-0.0635c-1.5267-6.1605-3.7671-12.144-6.6742-17.786a81.623 81.623 0 0 0-12.549-17.942 82.443 82.443 0 0 0-19.644-15.657zm-121.36 56.081a78.845 78.845 0 0 0-0.38073 2.1882 81.596 81.596 0 0 0-0.62573 20.838c0.69976 7.1146 2.3159 14.14 4.8135 20.839a81.438 81.438 0 0 0 10.151 19.046l0.21472-0.15403a81.173 81.173 0 0 1-10.118-18.984c-2.4893-6.6776-4.1003-13.681-4.7978-20.773a81.332 81.332 0 0 1 0.62385-20.771c0.11657-0.72901 0.24184-1.4562 0.37888-2.1811zm161.14-0.58921-0.25906 0.0511c1.2882 6.5892 1.771 13.336 1.4141 20.041l1e-4 5.2e-4a81.226 81.226 0 0 1-4.0954 21.506 82.073 82.073 0 0 1-10.766 21.248l0.21633 0.15269a82.337 82.337 0 0 0 10.801-21.316 81.491 81.491 0 0 0 4.1084-21.575c0.35768-6.7268-0.1278-13.496-1.419-20.107m-142.04 69.548-0.1991 0.1747a82.284 82.284 0 0 0 14.302 12.894c6.569 4.6576 13.824 8.3466 21.46 10.902 7.1944 2.4106 14.726 3.8136 22.306 4.144l0.0115-0.26453c-7.5556-0.32942-15.063-1.7273-22.234-4.1302-7.612-2.5475-14.844-6.2248-21.391-10.867a82.02 82.02 0 0 1-14.255-12.853zm123.46-0.4581c-5.1791 6.0195-11.24 11.281-17.934 15.553a81.226 81.226 0 0 1-18.733 8.8273 82.866 82.866 0 0 1-18.405 3.7105q-1.2966 0.11062-2.5958 0.18024l0.0141 0.26413q1.3035-0.0699 2.604-0.18103a83.131 83.131 0 0 0 18.464-3.7218 81.491 81.491 0 0 0 18.794-8.8568c6.7158-4.2862 12.795-9.5643 17.991-15.604z"
+      style="stroke-dasharray: 66.1122, 7.93346" />
+    <use transform="matrix(.99 -.00091577 .00091577 .99 1.4921 1.7525)" xlink:href="#circle-dashed-base" />
+    <use transform="matrix(.98 -.00088 .00088 .98 3.0794 3.3387)" xlink:href="#circle-dashed-base" />
+  </g>
+
+  <g id="circle-dots-outer">
+    <path id="circle-dot-outer-base"
+      d="m250.85 155.52a0.71358 0.71358 0 0 1-0.71358 0.71358 0.71358 0.71358 0 0 1-0.71358-0.71358 0.71358 0.71358 0 0 1 0.71358-0.71358 0.71358 0.71358 0 0 1 0.71358 0.71358" />
+    <use transform="translate(0 -4.6172)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-2 -14.238 178.32)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-4 52.068 174.28)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-6 74.309 173.67)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-8 85.552 173.92)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-10 92.41 174.51)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-12 97.092 175.26)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-14 100.54 176.11)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-16 103.22 177.01)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-18 105.41 177.95)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-20 107.25 178.91)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-22 108.85 179.89)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-24 110.27 180.87)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-26 111.57 181.85)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-28 112.77 182.83)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-30 113.89 183.82)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-32 114.96 184.79)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-34 115.99 185.77)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-36 116.99 186.73)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-38 117.97 187.69)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-40 118.93 188.64)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-42 119.89 189.58)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-44 120.84 190.51)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-46 121.78 191.43)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-48 122.73 192.33)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-50 123.68 193.23)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-52 124.64 194.11)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-54 125.6 194.97)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-56 126.57 195.82)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-58 127.55 196.66)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-60 128.54 197.48)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-62 129.55 198.29)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-64 130.56 199.07)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-66 131.59 199.85)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-68 132.63 200.6)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-70 133.68 201.34)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-72 134.75 202.05)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-74 135.83 202.75)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-76 136.92 203.43)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-78 138.03 204.09)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-80 139.15 204.73)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-82 140.29 205.34)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-84 141.44 205.94)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-86 142.61 206.52)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-88 143.78 207.07)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(-90 144.98 207.6)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(268 146.18 208.11)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(266 147.4 208.59)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(264 148.64 209.05)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(262 149.88 209.49)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(260 151.14 209.9)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(258 152.41 210.29)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(256 153.7 210.65)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(254 154.99 210.99)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(252 156.3 211.3)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(250 157.62 211.58)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(248 158.95 211.84)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(246 160.3 212.07)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(244 161.65 212.27)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(242 163.01 212.45)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(240 164.39 212.6)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(238 165.77 212.72)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(236 167.16 212.81)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(234 168.56 212.87)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(232 169.98 212.9)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(230 171.39 212.91)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(228 172.82 212.88)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(226 174.25 212.82)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(224 175.7 212.73)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(222 177.14 212.61)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(220 178.6 212.46)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(218 180.06 212.27)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(216 181.53 212.05)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(214 183 211.81)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(212 184.48 211.53)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(210 185.96 211.21)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(208 187.44 210.86)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(206 188.93 210.48)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(204 190.42 210.06)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(202 191.92 209.61)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(200 193.41 209.12)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(198 194.91 208.6)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(196 196.41 208.04)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(194 197.91 207.45)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(192 199.41 206.82)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(190 200.91 206.15)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(188 202.41 205.45)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(186 203.91 204.7)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(184 205.41 203.93)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(182 206.91 203.11)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(180 208.4 202.25)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(178 209.89 201.35)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(176 211.39 200.42)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(174 212.87 199.44)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(172 214.35 198.42)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(170 215.83 197.36)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(168 217.3 196.26)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(166 218.77 195.12)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(164 220.23 193.93)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(162 221.69 192.7)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(160 223.14 191.43)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(158 224.58 190.11)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(156 226.02 188.75)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(154 227.44 187.34)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(152 228.86 185.88)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(150 230.27 184.38)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(148 231.67 182.83)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(146 233.06 181.23)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(144 234.44 179.57)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(142 235.81 177.87)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(140 237.17 176.12)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(138 238.52 174.31)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(136 239.85 172.45)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(134 241.17 170.53)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(132 242.49 168.55)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(130 243.78 166.52)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(128 245.06 164.43)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(126 246.33 162.27)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(124 247.59 160.06)" xlink:href="#circle-dot-outer-base" />
+    <use transform="rotate(122 248.83 157.78)" xlink:href="#circle-dot-outer-base" />
+  </g>
+
+  <g id="circle-double-outer">
+    <path id="circle-double-outer-base"
+      d="m143.1 68.507c-50.529 9.8576-83.503 58.817-73.646 109.35 9.8578 50.53 58.816 83.506 109.35 73.648 50.53-9.8578 83.505-58.817 73.648-109.35-9.8578-50.53-58.817-83.505-109.35-73.648m0.0982 0.5033c50.258-9.8046 98.941 22.984 108.75 73.242 9.8046 50.258-22.985 98.942-73.243 108.75-50.258 9.8046-98.94-22.985-108.74-73.243-9.8046-50.258 22.983-98.941 73.241-108.75"
+      style="stroke-width: 0.96752" />
+    <use transform="matrix(1.0149 0 0 1.0149 -2.3619 -2.3882)" xlink:href="#circle-double-outer-base" />
+  </g>
+
+  <g id="circle-dashed-outer">
+    <path id="circle-dashed-outer-base"
+      d="m153.64 58.19a103.19 103.19 0 0 0-11.098 1.4086c-8.8234 1.608-17.434 4.3847-25.528 8.2502l0.11394 0.23895c8.0723-3.8554 16.661-6.6249 25.461-8.2288 7.3218-1.3358 14.789-1.879 22.226-1.5973a101.78 101.78 0 0 1 16.836 2.0486l0.054-0.25922a102.02 102.02 0 0 0-28.065-1.8611m35.788 3.7791-0.0736 0.2545a101.86 101.86 0 0 1 24.684 10.884 101.86 101.86 0 0 1 22.021 18.127 101.6 101.6 0 0 1 6.663 8.0705l0.2131-0.15766a102.13 102.13 0 0 0-6.6803-8.0916 102.13 102.13 0 0 0-22.079-18.174 102.13 102.13 0 0 0-24.749-10.912zm-79.455 9.5848a101.33 101.33 0 0 0-4.6769 2.8718c-8.4056 5.4771-15.993 12.204-22.447 19.885-6.5935 7.8398-12.006 16.672-15.984 26.113l0.24409 0.10276c3.9678-9.416 9.3658-18.226 15.942-26.046 6.4376-7.6602 14.005-14.37 22.389-19.833a101.07 101.07 0 0 1 4.6646-2.8637zm137.45 34.161-0.22432 0.14095a101.86 101.86 0 0 1 11.271 24.796 101.86 101.86 0 0 1 3.8319 19.368 101.76 101.76 0 0 1-0.76361 25.922 101.86 101.86 0 0 1-7.7015 25.822 101.86 101.86 0 0 1-6.1337 11.583l0.22613 0.1391a102.13 102.13 0 0 0 6.1491-11.613 102.08 102.08 0 0 0-6.6542-96.156zm-183.36 22.155a101.33 101.33 0 0 0-3.8772 15.822l5.27e-4 -5e-5c-1.3329 8.2582-1.6325 16.68-0.91562 25.013a102.07 102.07 0 0 0 5.1167 24.322l0.25075-0.0859a101.81 101.81 0 0 1-5.1036-24.259c-0.71528-8.3119-0.4162-16.712 0.91326-24.948a101.07 101.07 0 0 1 3.8669-15.78zm3.433 72.473-0.24357 0.10483a102.08 102.08 0 0 0 43.557 48.458l0.12985-0.2308a101.86 101.86 0 0 1-22.451-17.175 101.84 101.84 0 0 1-20.993-31.157zm175.79 19.594a101.86 101.86 0 0 1-18.51 19.418 101.86 101.86 0 0 1-34.509 18.163l0.0758 0.25361a102.13 102.13 0 0 0 34.599-18.21 102.13 102.13 0 0 0 18.558-19.468zm-125.29 32.366-0.11194 0.23994a102.13 102.13 0 0 0 36.12 9.3037 102.13 102.13 0 0 0 28.635-2.0859l-0.0561-0.25901a101.86 101.86 0 0 1-28.561 2.081 101.86 101.86 0 0 1-36.026-9.2797z"
+      style="stroke-dasharray: 66.2305, 7.94764" />
+    <use transform="matrix(.99322 -.0040391 .0040391 .99322 .44341 1.7313)" xlink:href="#circle-dashed-outer-base" />
+    <use transform="matrix(.98631 -.017647 .017647 .98631 -.61663 5.0298)" xlink:href="#circle-dashed-outer-base" />
+    <path
+      d="m164.48 56.732a104.51 104.51 0 0 0-11.322 0.23221c-9.0529 0.67534-18.016 2.5494-26.578 5.5751l0.17822 0.50459c8.5147-3.0099 17.432-4.874 26.438-5.5457 7.4931-0.56039 15.048-0.31015 22.485 0.76604a102.66 102.66 0 0 1 8.9662 1.7048l0.123-0.5211a103.29 103.29 0 0 0-20.292-2.7159zm35.619 7.63-0.20272 0.49563a102.82 102.82 0 0 1 23.621 13.558 102.84 102.84 0 0 1 21.669 22.623l0.43863-0.30705a103.4 103.4 0 0 0-21.782-22.741 103.34 103.34 0 0 0-23.745-13.629zm-88.225 4.7073c-8.199 4.4363-15.79 9.9903-22.508 16.453-7.4747 7.1863-13.866 15.498-18.879 24.575l0.469 0.2594c4.9869-9.0297 11.346-17.3 18.782-24.449 6.6828-6.4292 14.235-11.954 22.391-16.368zm141.93 45.526-0.48069 0.23555a102.79 102.79 0 0 1 10.453 45.947 102.74 102.74 0 0 1-3.5304 25.943 102.84 102.84 0 0 1-10.485 25.103 102.66 102.66 0 0 1-2.7493 4.4457l0.44838 0.29338a103.37 103.37 0 0 0 13.303-29.702 103.32 103.32 0 0 0 1.7571-46.034 103.37 103.37 0 0 0-8.7165-26.231zm-189.97 10.156a102.13 102.13 0 0 0-2.5522 8.0549c-2.2245 8.1701-3.4263 16.615-3.5956 25.079a103.34 103.34 0 0 0 2.5507 25.028l0.52213-0.11856a102.82 102.82 0 0 1-2.5371-24.898c0.16815-8.4211 1.3636-16.822 3.5766-24.949a101.6 101.6 0 0 1 2.5389-8.0124zm1.6808 73.333-0.4976 0.19839a102.92 102.92 0 0 0 1.3184 3.1519l-5.3e-4 -1e-5a103.32 103.32 0 0 0 13.839 22.951 103.37 103.37 0 0 0 20.816 19.739l0.31128-0.43659a102.84 102.84 0 0 1-20.708-19.636l4e-6 -5.3e-4a102.79 102.79 0 0 1-15.078-25.967zm171.72 30.863a102.82 102.82 0 0 1-20.654 17.521 102.84 102.84 0 0 1-28.772 12.767l0.13976 0.51726a103.37 103.37 0 0 0 28.922-12.835 103.34 103.34 0 0 0 20.761-17.611zm-122.21 22.995-0.23911 0.47921a103.37 103.37 0 0 0 28.304 9.3467 103.37 103.37 0 0 0 29.047 0.96116l-0.0576-0.53253a102.84 102.84 0 0 1-28.896-0.95605 102.84 102.84 0 0 1-28.158-9.2979z"
+      style="stroke-dasharray: 58.9183, 16.0686" />
+    <path
+      d="m157.38 60.262a100.8 100.8 0 0 0-10.893 0.98736c-8.7086 1.2663-17.249 3.6902-25.319 7.2041l0.20666 0.47354c8.0267-3.4951 16.523-5.9058 25.186-7.1656 7.1824-1.0459 14.479-1.3144 21.717-0.77959a99.217 99.217 0 0 1 8.6499 1.0209l0.0832-0.51073a99.747 99.747 0 0 0-19.631-1.23zm34.73 4.9134-0.16149 0.4915a99.297 99.297 0 0 1 23.78 11.504 99.35 99.35 0 0 1 22.33 20.241l0.40142-0.32569a99.852 99.852 0 0 0-22.446-20.347 99.826 99.826 0 0 0-23.903-11.564zm-84.666 10.574c-7.4025 4.7113-14.176 10.406-20.097 16.88-6.9139 7.5552-12.664 16.175-16.969 25.468l0.46956 0.21775c4.2828-9.2447 10.002-17.82 16.881-25.337l-3.3e-5 -5.3e-4c5.8908-6.4413 12.63-12.106 19.994-16.793zm139.84 34.129-0.44715 0.25989a99.323 99.323 0 0 1 10.18 24.666l3e-5 5.3e-4a99.217 99.217 0 0 1 3.0575 19.008 99.217 99.217 0 0 1-1.6506 25.235 99.35 99.35 0 0 1-10.752 29.354l0.45107 0.25256a99.852 99.852 0 0 0 10.808-29.507 99.8 99.8 0 0 0 1.6596-25.367 99.852 99.852 0 0 0-3.0735-19.108 99.826 99.826 0 0 0-10.233-24.795zm-182.32 22.789a98.688 98.688 0 0 0-1.8949 7.861c-1.5921 8.0224-2.18 16.24-1.7717 24.408a99.8 99.8 0 0 0 4.1648 24.004l0.49536-0.15023a99.297 99.297 0 0 1-4.1435-23.879c-0.40623-8.1252 0.17818-16.302 1.7618-24.282a98.424 98.424 0 0 1 1.8855-7.8196zm6.6154 70.526-0.46579 0.22474q0.70484 1.4593 1.457 2.895a99.8 99.8 0 0 0 36.313 38.819l0.27014-0.44129a99.323 99.323 0 0 1-21.318-17.548l-5.28e-4 3e-5a99.297 99.297 0 0 1-16.255-23.949m167.53 18.082a99.297 99.297 0 0 1-18.727 18.289 99.323 99.323 0 0 1-26.835 14.236l0.16917 0.48861a99.852 99.852 0 0 0 26.975-14.31 99.826 99.826 0 0 0 18.826-18.385zm-116.18 30.435-0.19869 0.47739q1.2165 0.50484 2.4461 0.97758a99.852 99.852 0 0 0 25.418 6.1013 99.852 99.852 0 0 0 28.086-1.0403l-0.092-0.50881a99.323 99.323 0 0 1-27.937 1.0345 99.323 99.323 0 0 1-27.719-7.0418z"
+      style="stroke-dasharray: 56.8979, 15.5176" />
+  </g>
+
+  <g class="ornament">
+    <path id="ornament-base" style="fill: var(--color-fill); stroke: none"
+      d="m161 0.0013546c-0.16076-0.013723-0.55823 0.076452-0.73774 0.28721-1.8474 2.0661-3.6349 4.1842-5.3605 6.3518-0.1995 0.24913-0.18479 0.60602 0.0345 0.83809 0.35901 0.38555 0.71539 0.77274 1.0691 1.1616 0.21698 0.23721 0.62431 0.22055 0.82453-0.02941l4.171-4.7609zm-1.5583 9.0327c-0.27617 0-0.35802 0.0059-0.62925 0.0098-0.28504 0.0049-0.47342 0.26172-0.46948 0.5205l-0.01 22.294c-0.0631 0.07352-0.10061 0.17644-0.14696 0.28034-12.993 0.27165-25.868 2.5202-38.176 6.6675-3.1647-4.269-6.4787-8.4267-9.9359-12.465l-0.11835-0.13919-0.1726 0.06469-0.47539 0.18232c-0.12821-0.2823-0.42509-0.49305-0.7338-0.37346-5.3494 2.0836-10.574 4.4711-15.647 7.1507-0.30378 0.15978-0.35112 0.54304-0.19825 0.82731l0.4251 0.79202c0.15188 0.28328 0.49709 0.45874 0.79889 0.29897 4.9984-2.6418 10.146-4.9943 15.418-7.0458 0.28011-0.10782 0.31562-0.42542 0.25742-0.69988l0.10258-0.04117c6.2008 7.2468 9.498 11.959 10.06 12.581 9.859-3.3612 23.174-6.5165 38.571-6.8086 0.19627 0.25976 0.41424 0.54108 0.78805 0.53618 0.30859-0.0014 0.602-0.13326 0.80679-0.36268 0.18443-0.20781 0.28207-0.46266 0.29095-0.71164 9e-3 -0.29813-0.10673-0.58664-0.31956-0.79692v-22.251c0-0.26074-0.19726-0.50972-0.48032-0.50972zm-9.2879 1.2517-0.26038 0.0196c-27.355 1.9948-60.578 13.719-87.807 36.638-27.226 22.916-48.447 57.035-51.76 103.79-0.17162 0.11762-0.38564 0.20781-0.40043 0.42346-0.02959 0.41169 0.32942 0.73517 0.74169 0.75967 0.41128 0.0255 0.8058-0.24506 0.83342-0.65675v-9.8e-4c0.01381-0.2078-0.17556-0.32348-0.32153-0.46169 3.2903-46.46 24.359-80.36 51.42-103.16 27.064-22.802 60.129-34.489 87.358-36.475l0.26038-0.0196zm0.65095 8.871-0.26038 0.0196c-3.1469 0.22872-6.2823 0.5633-9.4062 1.0037l-0.22388 0.03038v0.19604c-0.42344 1.6703-0.82388 3.3422-1.2013 5.0158-7.1224 1.1167-14.144 2.7966-20.997 5.0236l-0.24854 0.08037 0.26827 0.80966 0.24855-0.08037c4.2756-1.3919 11.918-3.6513 21.341-5.1168 0 0 0.85117-3.4847 1.2763-5.1579 2.9914-0.41365 5.9947-0.73517 9.0068-0.95572l0.26038-0.0196zm-3.1551 7.8486c-0.32547 0.03235-0.59474 0.23819-0.75944 0.50972-0.17022 0.29427-0.23978 0.63547-0.19825 0.97238 0.0384 0.35778 0.17853 0.67635 0.39255 0.90769 0.21402 0.23133 0.51682 0.38033 0.84032 0.34896 0.49906-0.05096 0.79494-0.50874 0.88963-1.039 0.79955-0.07319 1.5998-0.13919 2.4006-0.198l0.26039-0.01961-0.0611-0.84985-0.26235 0.0196c-0.80547 0.05947-1.6109 0.12645-2.4164 0.20094-0.19332-0.5058-0.57994-0.9018-1.0849-0.85279zm-55.828 7.5065-0.2298 0.12449c-1.8329 0.99728-3.6448 2.0323-5.4345 3.1044-7.0342 4.2042-13.772 8.9877-20.054 14.374-4.3959 3.766-9.5571 8.6426-16.55 17.726-0.20318-9.8e-4 -0.42509-0.05195-0.5543 0.11665-0.24854 0.32445-0.10948 0.77438 0.21402 1.0184 0.32252 0.24212 0.79594 0.25682 1.0435-0.06764 0.12427-0.16174 0.02367-0.35582-0.02465-0.545 6.2896-8.1702 11.185-13.108 16.432-17.605 6.2432-5.351 12.94-10.107 19.936-14.289 1.7796-1.0654 3.5813-2.0938 5.4039-3.0848l0.22881-0.12449zm63.61 4.858-0.13512 0.0059c-1.3525 0.06209-2.7038 0.14704-4.0537 0.25486l-0.12624 0.01077-0.069 0.1039-0.25644 0.37836-0.29884 0.44698 0.53753-0.04411c1.3644-0.11109 2.7297-0.19866 4.0961-0.2627l0.39648 0.52834-0.0522 0.07253-0.10849 0.15292 0.11243 0.15193c1.7711 2.3599 3.4538 4.784 5.0449 7.2674l0.4823 0.75183v-2.0977l-0.0444-0.06567c-1.715-2.586-3.5305-5.1048-5.4424-7.5507zm-61.021 1.6517c-0.45369 0-0.82651 0.37249-0.82651 0.82339 0 0.35386 0.23671 0.64989 0.55922 0.76261 0.22027 1.0861 0.44811 2.1696 0.6835 3.2504-0.93105 0.52801-1.8559 1.0665-2.7744 1.6154-6.5194 3.9023-12.733 8.3084-18.48 13.241-0.60032 0.51494-1.1944 1.0351-1.7822 1.5605l-0.19233 0.17448 0.57304 0.63126 0.19331-0.17252c0.58257-0.52082 1.172-1.0371 1.7684-1.5488 5.7086-4.8982 11.88-9.2768 18.362-13.156 0.99286-0.59467 1.9926-1.1763 2.9993-1.7448h0.25447l-0.0671-0.31367c-0.27025-1.2614-0.53031-2.525-0.78016-3.7905 0.15189-0.15194 0.3383-0.28819 0.3383-0.50972 0-0.4509-0.3748-0.82339-0.82848-0.82339m59.977 0.97238-0.26235 0.01568c-9.6858 0.55103-19.265 2.2965-28.518 5.1962-2.9253 0.9163-5.814 1.9443-8.6596 3.0818l-0.24165 0.09606 0.32055 0.79104 0.23966-0.09607c2.8261-1.13 5.6951-2.1512 8.6004-3.0612 9.1851-2.8767 18.694-4.6093 28.308-5.1579l0.26039-0.01471zm-63.421 1.7477 0.19036 0.20585 0.0247 0.02647c-0.0326 0.03529-0.0947 0.03038-0.11638 0.0745l0.0296-0.05195c0 2e-3 -0.01 0.0059-0.01 0.0059l-0.0443 0.07253v0.01373l0.01-0.01373c-0.01 0.01373 0 0.02941-0.01 0.04411 0 0.03529-0.01 0.07253-0.01 0.09018v-0.03627c-0.01 0.04313-0.0267 0.08332-0.0267 0.12743v3e-3c5e-3 0.48865 0.59181 0.73871 0.95177 0.40581v-4e-3l0.01-0.0059c0.0712-0.06892 0.12376-0.15454 0.15288-0.24898 0.0271-0.11436 0.0193-0.2342-0.0227-0.34406v-0.01373c-0.0424-0.10684-0.17063-0.11567-0.26235-0.17644v-0.01568l-0.069-0.0745-0.0148 0.03431c-0.0691-0.02941-0.0996-0.11861-0.17754-0.11861zm0.12822 0.25486 0.0434-0.03628-0.01 2e-3 -0.0365 0.03431zm-3.7657 2.0732c-0.46422 0.0038-0.83916 0.3777-0.8413 0.83907 0.06279 1.0526 1.6228 1.0526 1.6856 0-0.0022-0.46251-0.37889-0.83692-0.84426-0.83907m27.377 0.2529-0.24263 0.09802c-1.2437 0.50384-2.5772 1.1302-3.7923 1.6674l-0.15386 0.06666v0.17056c0 1.0283 0.0217 2.0516 0.0453 3.073-19.801 9.0288-31.883 20.729-35.072 24.045-2.9322 3.0465-33.287 35.389-35.154 79.462l-0.01183 0.26466 1.0514 0.0187 0.0099-0.25288c1.7231-43.845 31.873-75.942 34.727-78.906 4.8299-5.0236 16.382-15.565 35.149-24.074h0.20713l-0.01-0.26466c-0.0247-1.0183-0.0404-2.0368-0.0473-3.0554 1.1184-0.49011 2.2418-0.96846 3.3731-1.4262l0.24066-0.09801zm-31.559 2.2251c-0.59572 0-1.0849 0.48717-1.0849 1.0792 0 0.59205 0.4892 1.0782 1.0849 1.0782s1.0849-0.48521 1.0849-1.0782-0.48821-1.0792-1.0849-1.0792m70.216-3.7739-0.44975 0.03137c-1.0376 0.07581-2.0732 0.16664-3.1068 0.2725l-0.47342 0.04902 0.2959 0.36856c0.62662 0.79136 1.2411 1.5886 1.8434 2.3917l0.26334 0.3519 0.18345-0.40091c0.40437-0.88874 0.82026-1.7755 1.2477-2.6603zm-4.3614 0.34602-0.15188 0.01471c-0.97972 0.09802-1.9581 0.20846-2.9352 0.33132l-0.43989 0.05587 0.26235 0.35582c0.68317 0.92402 1.3519 1.8539 2.0061 2.7897l0.0868 0.12645 0.15485-0.01764c0.94684-0.10456 1.8953-0.19702 2.8454-0.2774l0.43496-0.03628-0.23869-0.36366c-0.63219-0.96022-1.2776-1.9118-1.9361-2.8544zm-3.8889 0.4509-0.15189 0.02157c-0.76602 0.1039-1.5307 0.21565-2.2941 0.33524l-0.43692 0.06862 0.27321 0.347c0.71012 0.90311 1.4061 1.8131 2.088 2.7299l0.0928 0.12449 0.15386-0.02255c0.74104-0.10456 1.4827-0.2016 2.2251-0.29113l0.43495-0.05195-0.25249-0.35582c-0.66715-0.93644-1.3471-1.8638-2.0396-2.7819zm-3.2419 0.48521-0.15189 0.02548c-0.72525 0.11959-1.4489 0.24702-2.1708 0.38229l-0.43593 0.08038 0.28306 0.33916c0.73709 0.8822 1.4597 1.7716 2.1679 2.6682l0.0967 0.12057 0.15386-0.0245c0.70027-0.12024 1.4022-0.23329 2.1057-0.33916 0 0 0.37775 0.0696 0.43397-0.06469 0.0542-0.13429-0.26432-0.347-0.26432-0.347-0.69304-0.91357-1.4009-1.8209-2.1235-2.7221zm-26.922 4.9766-0.24065 0.10096c-9.414 3.9901-18.304 9.1057-26.472 15.234v-0.03431l-0.41917 0.31759c-0.05326 0.04019-0.11441 0.09508-0.1795 0.15194l-0.06509 0.05489v-0.01077l-0.30575 0.23329c-5.4759 4.1983-8.563 7.2536-10.662 9.4366-2.6393 2.7417-28.954 30.938-33.847 70.859l-0.02959 0.2578 0.84821 0.10389 0.03353-0.25877c2.66-21.698 12.166-39.964 17.687-49.055 1.292-6.5e-4 2.5795 0.0127 3.8623 0.0401l0.14104 0.14018 0.17457-0.27643c6.9524-11.059 13.384-17.868 14.291-18.81v-2e-3c3.0979-3.22 5.6702-5.4373 8.634-7.7957l0.16767-0.13135 0.09863-0.07841v-0.23427l-0.01183-0.01176c-0.04932-0.48358-0.09534-0.96911-0.13808-1.4566l-0.04241-0.47737-0.37775 0.29603c-0.05927 0.04734-0.11716 0.09637-0.17359 0.14703l-0.14597 0.12743-0.11046 0.08724 0.0099 0.13723c0.02827 0.3483 0.05787 0.69628 0.08877 1.0439-3.8801 3.0848-6.255 5.302-8.6182 7.7594-2.5969 2.6956-8.4791 9.5719-14.305 18.812-1.0312-0.0216-2.0626-0.0334-3.094-0.0354 7.1664-11.642 13.915-18.977 15.477-20.6 1.9864-2.0663 4.9364-4.9893 10.231-9.0818 0.02367 0.32347 0.04866 0.64695 0.07496 0.97042l0.04044 0.47835 0.37972-0.29407c0.05128-0.03921 0.11046-0.0941 0.17556-0.15096 0.06509-0.05686 0.13414-0.11763 0.14992-0.12939l0.11145-0.08626-0.01183-0.13919c-0.03485-0.42868-0.06707-0.85769-0.09666-1.287 5.3112-4.0287 13.247-9.1964 23.128-13.767 0.0217 0.25943 0.0447 0.51854 0.069 0.77732-10.113 4.6776-17.378 9.3846-22.326 13.145l-0.10553 0.08332v0.13331c0.0099 0.13723 0.01183 0.27446 0.01775 0.41071l0.01972 0.49991 0.40043-0.30779c5.1287-3.9139 12.565-8.7611 22.734-13.436l0.15189-0.06861v-0.22937l-0.01-0.01372c-0.0473-0.44175-0.0934-0.88416-0.13808-1.3272l-0.14794 0.26074-0.0918-0.19702c1.0366-0.47345 1.9814-0.97434 3.0614-1.4311l0.24066-0.10096zm-35.957 0.18624c-0.68448 0-1.2447 0.55873-1.2447 1.238 0 0.68027 0.5612 1.2361 1.2447 1.237 0.68448 0 1.2447-0.55677 1.2447-1.237s-0.56021-1.239-1.2447-1.239m59.763-4.6041-0.14991 0.02941c-0.68252 0.13331-1.3637 0.27283-2.0436 0.41855l-0.43397 0.0941 0.29195 0.33132c0.76142 0.86194 1.5087 1.7311 2.2418 2.6074l0.1006 0.11959 0.15188-0.03137c0.66082-0.1307 1.322-0.25584 1.9834-0.37542l0.43002-0.07841-0.27319-0.33916c-0.72106-0.89658-1.4543-1.7834-2.1994-2.6603zm-2.9835 0.62048-0.14992 0.03431c-0.64043 0.14377-1.2796 0.29309-1.9173 0.44796l-0.43102 0.10586 0.30082 0.32347c0.78377 0.84038 1.5537 1.6889 2.3099 2.5456l0.10356 0.11763 0.14992-0.03431c0.62071-0.14115 1.2421-0.27642 1.8641-0.40581l0.42805-0.09018-0.28307-0.33132c-0.74558-0.87607-1.5031-1.742-2.2724-2.5976zm-2.8504 0.67635-0.14795 0.03822c-0.59966 0.1503-1.198 0.30648-1.795 0.46855l-0.42706 0.11763 0.31068 0.31367c0.80481 0.82077 1.5958 1.6497 2.373 2.4868l0.10554 0.11272 0.15089-0.03822c0.57929-0.14703 1.1602-0.28949 1.7428-0.42738l0.42608-0.099-0.29095-0.32543c-0.76667-0.85279-1.5475-1.6984-2.3424-2.5368zm-2.7182 0.71948-0.14794 0.04215c-0.55824 0.15684-1.1145 0.31759-1.6688 0.48227l-0.42608 0.12743 0.31759 0.30583c0.82519 0.80051 1.6372 1.6095 2.4361 2.427l0.10651 0.11076 0.15091-0.04215c0.53917-0.1503 1.0796-0.29701 1.6215-0.44012l0.42213-0.11076-0.29885-0.31759c-0.78838-0.83319-1.5902-1.6585-2.4056-2.476zm-2.59 0.75673-0.14597 0.04509c-0.51732 0.15836-1.0335 0.32042-1.5485 0.48619l-0.42214 0.13723 0.32548 0.29995c0.47145 0.43456 0.93895 0.8724 1.4025 1.3135 0.36691 0.35027 0.73118 0.70249 1.0928 1.0567l0.11145 0.10782 0.14795-0.04705c0.49971-0.15226 1.0004-0.30093 1.5021-0.446l0.42016-0.12253-0.30773-0.30975c-0.80875-0.81358-1.6307-1.619-2.4657-2.4162zm-52.451 5.104c-0.59572 0-1.0849 0.48521-1.0849 1.0782 0 0.59205 0.4892 1.0782 1.0849 1.0782 0.59572 0 1.0849-0.48619 1.0849-1.0782 0-0.59206-0.48821-1.0782-1.0849-1.0782m49.985-4.3208-0.144 0.04705c-0.47802 0.15945-0.95506 0.32151-1.4311 0.48619l-0.42016 0.14605 0.3314 0.29309c0.86464 0.76131 1.7161 1.5321 2.5545 2.3123l0.11146 0.10488 0.14794-0.04705c0.46356-0.15292 0.92777-0.30322 1.3926-0.4509l0.41819-0.12939-0.31561-0.30289c-0.83112-0.79464-1.6747-1.5801-2.5308-2.3565zm-2.3424 0.80378-0.14499 0.04902c-0.43791 0.15684-0.8755 0.31662-1.3128 0.47933l-0.41621 0.15488 0.3383 0.28426c0.87843 0.74082 1.7468 1.4934 2.6048 2.2575l0.1154 0.1039 0.14499-0.05097c0.42542-0.15161 0.85182-0.29995 1.2792-0.44502l0.41423-0.13919-0.32152-0.29407c-0.84822-0.77634-1.7102-1.5432-2.5861-2.3006zm-2.2192 0.81359-0.14202 0.05293c-0.40044 0.15291-0.79923 0.30746-1.1964 0.46364l-0.41425 0.16468 0.34521 0.2774c0.89554 0.72536 1.7789 1.4605 2.6502 2.2055l0.11738 0.09998 0.14399-0.05392c0.38794-0.14507 0.77654-0.28884 1.1658-0.4313l0.41226-0.14998-0.32941-0.2872c-0.86831-0.75993-1.7468-1.5082-2.6354-2.2447zm-49.271 6.1538c-0.46499 0.0027-0.84112 0.37694-0.84328 0.83907 0 0.45874 0.3817 0.83613 0.84328 0.83613 0.46413-0.0016 0.84013-0.37486 0.84229-0.83613-0.0022-0.46175-0.37768-0.83585-0.84229-0.83907m-3.7232 3.62c-0.30871 0-0.56416 0.25486-0.56416 0.56167s0.25644 0.55873 0.56416 0.55873 0.56218-0.2529 0.56218-0.55873-0.25446-0.56167-0.56218-0.56167m-7.7079 5.6922-0.26137 0.30387c-0.35506 0.41169-0.70684 0.82535-1.0553 1.241l-0.10849 0.13037 0.07298 0.14899c0.23737 0.48162 0.47736 0.96192 0.71999 1.4409l0.13216 0.2627 0.04635 0.09214 0.02959 0.05882c0.46816 0.92076 0.94224 1.8356 1.4222 2.7446 0.1052 0.19996 0.2114 0.40026 0.31857 0.60088l0.18444 0.34896 0.24854-0.30681c0.05523-0.06862 0.11178-0.13723 0.16964-0.20585 0.27222-0.33458 0.54575-0.6672 0.82059-0.99787l0.10948-0.13233-0.0789-0.15291c-0.57736-1.1128-1.1429-2.2316-1.6964-3.3563l-0.13118-0.26466-0.07298-0.15095c-0.23474-0.47966-0.46717-0.96094-0.69731-1.4439zm-1.8 2.1251-0.25644 0.30877c-0.20383 0.24636-0.40569 0.49305-0.60558 0.74007l-0.42016 0.51756-0.10553 0.13233 0.07791 0.14801c0.8995 1.7343 1.8207 3.4504 2.7636 5.1481l0.19331 0.34504 0.24263-0.30975c0.31956-0.40973 0.64174-0.81816 0.96656-1.2253l0.10849-0.13233-0.08384-0.15095c-0.92562-1.709-1.8265-3.4311-2.7024-5.1658zm-1.7536 2.1535-0.24855 0.31367c-0.336 0.42346-0.67002 0.84855-1.0021 1.2753l-0.10356 0.13233 0.0789 0.14997c0.9286 1.712 1.8814 3.4109 2.8583 5.0962l0.19824 0.34308 0.23671-0.31661c0.31298-0.41496 0.62794-0.82829 0.94487-1.24l0.10356-0.13723-0.08285-0.149c-0.95668-1.6914-1.8891-3.3961-2.7971-5.1138zm-1.7122 2.183-0.24263 0.31759c-0.32876 0.42934-0.65522 0.85998-0.97938 1.2919l-0.09862 0.13723 0.08186 0.14409c0.95906 1.6966 1.9418 3.3798 2.948 5.0491l0.20219 0.3372 0.23276-0.31955c0.30575-0.4215 0.61314-0.84103 0.92218-1.2586l0.10257-0.13723-0.08679-0.14703c-0.98604-1.6748-1.9484-3.3632-2.8869-5.0648zm33.526-0.32544c-0.41424 0.33426-1.3966 1.139-1.3966 1.139l0.79594 3.7905s0.79594-0.67929 1.3394-1.1312c-0.27301-1.2609-0.51964-2.5273-0.73972-3.7984m-1.6372 1.338-1.4508 1.2351 0.91725 3.7366 1.3571-1.1959zm-33.559 1.2008-0.23868 0.32151c-0.32022 0.43456-0.63912 0.87109-0.9567 1.3096l-0.09863 0.13527 0.0858 0.14605c0.9888 1.6785 2.0008 3.3434 3.0358 4.9942l0.21008 0.33524 0.22685-0.32347c0.29852-0.42672 0.59835-0.85149 0.8995-1.2743l0.1006-0.13821-0.08877-0.14605c-1.016-1.6576-2.009-3.329-2.9786-5.0138zm31.88 0.23329-1.4597 1.2998 1.0968 3.6396 1.3335-1.24zm-33.514 2.0085-0.2298 0.32544c-0.31364 0.44044-0.62465 0.88187-0.93303 1.3243l-0.09666 0.14017 0.08877 0.14311c1.0183 1.6611 2.0593 3.3083 3.1226 4.9413l0.21402 0.33131 0.22093-0.32739c0.29128-0.43195 0.58388-0.86194 0.8778-1.29l0.09863-0.14213-0.09172-0.14311c-1.0442-1.6393-2.0657-3.2928-3.0644-4.9599zm31.859-0.53226-1.3216 1.2645 1.3236 3.4876 1.154-1.1567zm-1.585 1.5046-1.4222 1.4605s1.1027 2.8946 1.364 3.5415c0.44284-0.48717 1.3522-1.439 1.3522-1.439zm-31.864 1.2959-0.22685 0.32935c-0.30575 0.44502-0.60887 0.89168-0.90936 1.34l-0.09271 0.14017 0.09074 0.14409c1.0465 1.6433 2.115 3.2726 3.2054 4.8874l0.22093 0.32739 0.216-0.33132c0.28339-0.43587 0.56942-0.87044 0.85807-1.3037l0.0937-0.14409-0.09468-0.14115c-1.0698-1.618-2.1202-3.2543-3.1512-4.909zm30.235 0.37346-1.4637 1.5987 1.4005 3.5837 1.4646-1.6693zm-31.727 1.9604-0.21994 0.33524c-0.29786 0.4496-0.59309 0.9005-0.88569 1.3527l-0.09074 0.14213 0.09271 0.14213c1.0748 1.6252 2.1714 3.2362 3.2893 4.8325l0.22685 0.32347 0.20909-0.33622c0.27616-0.44044 0.55429-0.87926 0.8344-1.3164l0.09271-0.14507-0.09666-0.14017c-1.1-1.6034-2.1784-3.2212-3.235-4.8531zm30.074-0.15095-1.5781 1.8379 1.439 3.617 1.5514-1.8673zm-31.759 2.8044-0.07595 0.12057c-1.0058 1.5829-1.9846 3.1825-2.9362 4.7982-1.6715 2.835-3.253 5.7216-4.7421 8.6554-1.5821-0.16329-3.1658-0.31066-4.751-0.44208l-0.19331-0.0981-0.11441 0.23721c-1.0653 2.1603-2.0801 4.3448-3.0437 6.5518l-0.10257 0.23722 0.78607 0.33917 0.10356-0.23821c0.91396-2.0892 1.873-4.1565 2.877-6.2019 1.5991 0.13069 3.1939 0.27772 4.7845 0.4411l0.28602 0.0314v-0.2225c1.5199-3.0046 3.1373-5.9596 4.8496-8.8602 0.91659-1.5553 1.8578-3.0959 2.8237-4.6218l0.08482-0.13135-0.07693-0.13429-0.18838-0.32936-0.07298-0.13233zm29.975-0.72144-1.6589 2.031 1.5031 3.6092 1.6007-2.0242zm-1.87 2.2957-1.6895 2.1751 1.6086 3.4602 1.5998-2.0389zm-25.779 1.1439-0.21304 0.34112c-0.73858 1.184-1.4619 2.3774-2.1698 3.5798l-0.40734 0.69204-0.08285 0.14311 0.09863 0.13625c0.39188 0.54565 0.7864 1.0893 1.1835 1.6311l0.23967 0.32151 0.19824-0.34602c0.81558-1.4205 1.654-2.828 2.515-4.2218l0.08877-0.1441-0.0937-0.13724c-0.38005-0.55219-0.7578-1.106-1.1332-1.6615zm23.88 1.3037-1.7063 2.3094 1.6708 3.5435 1.6392-2.2898zm-1.9065 2.5888-1.9233 2.7534 1.7339 3.6758 1.874-2.8966zm-2.1521 3.1563-2.2389 3.3426 3.7361 0.17645zm-38.652 10.551c-0.12493-0.01-0.24559 9.8e-4 -0.36197 0.0334l-0.19134 0.0539v0.10782c-0.13216 0.0814-0.28602 0.14213-0.35013 0.29407-6.0637 14.289-9.9753 29.544-11.051 45.165-0.03452 0.50679 0.42608 0.89593 0.95571 0.92828l1.0011 0.0637c0.52766 0.0324 1.0356-0.28622 1.0691-0.78907 1.0455-15.249 4.8802-30.182 10.829-44.192 0.19726-0.46463-0.1154-0.97337-0.60164-1.1802l-0.92711-0.39209c-0.11809-0.0506-0.24368-0.0817-0.37183-0.0921m16.665 0.0392-0.03748 0.0246c-0.53753 0.0627-0.9567 0.51951-0.9567 1.0782 0 0.25877 0.16767 0.4607 0.32745 0.65675-2.7196 5.7685-5.0347 11.717-6.9287 17.803-1.6918 0.0935-3.3849 0.20879-5.0794 0.34601l-0.21797-0.11272-0.08877 0.30387c-1.3145 4.5324-2.3767 9.1334-3.1818 13.782l-0.05425-0.0559 0.03452 0.14017c-0.02269 0.13232-0.06805 0.26073-0.09073 0.39404h-0.12723l0.08088 0.32151c1.7063 6.8714 3.9945 13.38 6.8577 19.388l0.07102 0.14704h0.9133l-0.17753-0.36868c-2.8405-5.9372-5.1129-12.376-6.8113-19.178 0.80842-4.726 1.8845-9.4029 3.2232-14.008 1.7102-0.13919 3.4195-0.25615 5.1277-0.35091l0.58783-0.0324-0.29885-0.29406c1.8887-6.0872 6.7502-17.421 6.906-17.781 0.59572 0 1.0731-0.50089 1.0731-1.1008 0-0.5999-0.47736-1.1018-1.0731-1.1028zm-1.7181 12.918 0.22882 0.25779-0.45764-0.0294zm0 0c-0.18708 9.8e-4 -0.36084 0.0965-0.46356 0.25191l-0.01381 0.0127-0.04635 0.0804v0.0157l0.0099-0.0274c-0.0099 0.0167-0.0099 0.0354-0.01085 0.0519v4e-3c-0.02063 0.0547-0.03292 0.11221-0.0365 0.17055 0 0.30583 0.25644 0.56069 0.56416 0.56069 0.14456-5e-4 0.28338-0.0562 0.38761-0.15585v-4e-3l0.0099-4e-3c0.07082-0.0691 0.12306-0.15465 0.15189-0.24897 0.0276-0.11499 0.01969-0.23558-0.02269-0.34602v-0.0117c-0.08615-0.21254-0.29415-0.35131-0.52471-0.34993zm-0.42213 0.21368c0 2e-3 -0.0099 6e-3 -0.0099 6e-3l0.0099-7e-3zm-0.5178 2.1761c-0.46461 2e-3 -0.84103 0.37536-0.84426 0.83711 0.0027 0.46214 0.37927 0.83595 0.84426 0.83809 0.46451-2e-3 0.84022-0.37643 0.8413-0.83809-0.0016-0.46127-0.37718-0.83496-0.8413-0.83711m-1.01 2.5809c-0.59572 0-1.0849 0.48522-1.0849 1.0782 0 0.59206 0.4892 1.0783 1.0849 1.0783 0.59572 0 1.0849-0.4862 1.0849-1.0783 0-0.59203-0.48821-1.0782-1.0849-1.0782m-1.296 3.2906c-0.68448 0-1.2447 0.55676-1.2447 1.237s0.56021 1.237 1.2447 1.237c0.6835 0 1.2437-0.55677 1.2437-1.237s-0.55923-1.237-1.2437-1.237m-3.8524 1.7713c-0.5967 0-1.0849 0.48716-1.0849 1.0802 0 0.59206 0.48821 1.0782 1.0849 1.0782 0.59572 0 1.0849-0.48619 1.0849-1.0782 0-0.59205-0.4892-1.0802-1.0849-1.0802m-0.77522 3.1681c-0.46423 3e-3 -0.84328 0.37573-0.84328 0.83712v2e-3c0 0.45973 0.38071 0.83711 0.84328 0.83711 0.46384-3e-3 0.84229-0.37611 0.84229-0.83711v-2e-3c0-0.46101-0.37845-0.83391-0.84229-0.83712m-0.63714 2.6388c-0.30871 0-0.56416 0.2529-0.56416 0.55874 0 0.30582 0.25644 0.56068 0.56416 0.56068s0.56219-0.25486 0.56219-0.56068c0-0.30584-0.25446-0.55874-0.56219-0.55874m4.5054 18.883c-0.02269 0.41758-0.08285 0.81849-0.09961 1.238 0.01874-0.41953 0.0789-0.82044 0.10356-1.238zm-33.819 0.2822c-0.15526-8e-3 -0.30803 0.0411-0.42904 0.1382-2.2258 1.7541-4.3954 3.5776-6.5056 5.4677v2e-3c-0.07841 0.0704-0.1418 0.15569-0.18641 0.25088-0.02154 0.0507-0.035818 0.10416-0.04241 0.1588v0.27642h3.882l0.07496-0.0686c1.5643-1.4331 3.1463-2.8142 4.746-4.1434 0.25085-0.21204 0.26543-0.592 0.03156-0.8224-0.38597-0.35877-0.76996-0.72047-1.152-1.0851-0.11284-0.10643-0.26077-0.16844-0.41621-0.17448zm24.874 3.3778-0.26235 2e-3c-0.21896 0-0.40339 0.1245-0.57994 0.24703l-20.098 4e-3c-0.25024 3e-3 -0.45652 0.19602-0.47539 0.44404-0.0099 0.29406 0 0.66165 0 0.67243 0 0.24309 0.21896 0.45874 0.46553 0.4607h20.055c0.1874 0.149 0.38564 0.29898 0.62925 0.29898 0.58951-3e-3 1.0701-0.47668 1.0701-1.0626v-2e-3c0-0.48325-0.36295-0.82633-0.80876-0.95376z" />
+    <use transform="matrix(-1 0 0 1 321.98 0)" xlink:href="#ornament-base" />
+    <use transform="rotate(180 160.99 160)" xlink:href="#ornament-base" />
+    <use transform="matrix(1 0 0 -1 -.005187 320)" xlink:href="#ornament-base" />
+  </g>
+</svg>
