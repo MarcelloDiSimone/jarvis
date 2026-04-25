@@ -26,6 +26,7 @@
       },
       "configurations": {
         "production": {
+          "serviceWorker": "apps/jarvis-client/ngsw-config.json",
           "budgets": [
             {
               "type": "initial",
@@ -46,7 +47,8 @@
           "sourceMap": true
         },
         "github-pages": {
-          "baseHref": "/jarvis/"
+          "baseHref": "/jarvis/",
+          "serviceWorker": "apps/jarvis-client/ngsw-config.json"
         }
       },
       "defaultConfiguration": "production"
