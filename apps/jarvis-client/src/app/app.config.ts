@@ -2,7 +2,7 @@ import {
   ApplicationConfig,
   isDevMode,
   provideBrowserGlobalErrorListeners,
-  provideZoneChangeDetection,
+  provideZonelessChangeDetection,
 } from '@angular/core';
 import { provideRouter, withHashLocation } from '@angular/router';
 import { appRoutes } from './app.routes';
@@ -12,7 +12,7 @@ import { provideServiceWorker } from '@angular/service-worker';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideZoneChangeDetection({ eventCoalescing: true }),
+    provideZonelessChangeDetection(),
     provideRouter(appRoutes, withHashLocation()),
     provideAiCommandApi(),
     provideServiceWorker('ngsw-worker.js', {
