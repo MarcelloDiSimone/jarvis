@@ -1,6 +1,6 @@
 import express from 'express';
 
-const host = process.env['HOST'] ?? 'localhost';
+const host = process.env['HOST'] ?? '0.0.0.0';
 const port = process.env['PORT'] ? Number(process.env['PORT']) : 3333;
 
 const app = express();

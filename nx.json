@@ -41,6 +41,7 @@
     },
     "@angular/build:dev-server": {
       "options": {
+        "host": "0.0.0.0",
         "ssl": true,
         "sslCert": ".private/localhost.pem",
         "sslKey": ".private/localhost-key.pem"
