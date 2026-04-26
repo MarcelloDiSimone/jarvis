@@ -4,29 +4,38 @@
   "projectType": "application",
   "prefix": "app",
   "sourceRoot": "apps/jarvis-client/src",
-  "tags": ["scope:client"],
+  "tags": [
+    "scope:client"
+  ],
   "targets": {
     "build": {
-      "executor": "@angular/build:application",
-      "outputs": ["{options.outputPath}"],
+      "executor": "@nx/angular:webpack-browser",
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
-        "outputPath": "dist/apps/jarvis-client",
-        "browser": "apps/jarvis-client/src/main.ts",
+        "outputPath": "dist/apps/jarvis-client/browser",
+        "main": "apps/jarvis-client/src/main.ts",
         "index": "apps/jarvis-client/src/index.html",
-        "polyfills": ["zone.js"],
+        "polyfills": [],
         "tsConfig": "apps/jarvis-client/tsconfig.app.json",
-        "outputMode": "static",
         "assets": [
           {
             "glob": "**/*",
             "input": "apps/jarvis-client/public"
           }
         ],
-        "styles": ["apps/jarvis-client/src/styles.css"]
+        "styles": [
+          "apps/jarvis-client/src/styles.css"
+        ],
+        "customWebpackConfig": {
+          "path": "apps/jarvis-client/webpack.config.js"
+        }
       },
       "configurations": {
         "production": {
-          "serviceWorker": "apps/jarvis-client/ngsw-config.json",
+          "serviceWorker": true,
+          "ngswConfigPath": "apps/jarvis-client/ngsw-config.json",
           "budgets": [
             {
               "type": "initial",
@@ -44,19 +53,31 @@
         "development": {
           "optimization": false,
           "extractLicenses": false,
-          "sourceMap": true
+          "sourceMap": true,
+          "fileReplacements": [
+            {
+              "replace": "apps/jarvis-client/src/environments/environment.ts",
+              "with": "apps/jarvis-client/src/environments/environment.development.ts"
+            }
+          ]
         },
         "github-pages": {
           "baseHref": "/jarvis/",
-          "serviceWorker": "apps/jarvis-client/ngsw-config.json"
+          "serviceWorker": true,
+          "ngswConfigPath": "apps/jarvis-client/ngsw-config.json",
+          "fileReplacements": [
+            {
+              "replace": "apps/jarvis-client/src/environments/environment.ts",
+              "with": "apps/jarvis-client/src/environments/environment.github-pages.ts"
+            }
+          ]
         }
       },
       "defaultConfiguration": "production"
     },
     "serve": {
-      "dependsOn": ["api:serve"],
       "continuous": true,
-      "executor": "@angular/build:dev-server",
+      "executor": "@nx/angular:dev-server",
       "configurations": {
         "production": {
           "buildTarget": "jarvis-client:build:production"

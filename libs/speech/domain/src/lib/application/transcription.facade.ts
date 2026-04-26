@@ -1,4 +1,5 @@
 import { inject, Injectable, signal } from '@angular/core';
+import { firstValueFrom } from 'rxjs';
 import { AI_COMMAND_GATEWAY } from './ai-command.gateway';
 import { MicrophoneLoudnessService } from '../infrastructure/microphone-loudness.service';
 import { SpeechRecognitionService } from '../infrastructure/speech-recognition.service';
@@ -25,7 +26,7 @@ const ACKNOWLEDGEMENT = 'Yes, my master';
 const FAILURE_RESPONSE = "Sorry Dave, I can't do this.";
 const COMMAND_PAUSE_MS = 1200;
 
-export type VoiceState = 'inactive' | 'waiting' | 'recording';
+export type VoiceState = 'inactive' | 'waiting' | 'recording' | 'reading';
 
 type TranscriptionMode =
   | 'idle'
@@ -174,7 +175,7 @@ export class TranscriptionFacade {
     }
 
     try {
-      await this.speechSynthesis.speak(ACKNOWLEDGEMENT);
+      await firstValueFrom(this.speechSynthesis.speak(ACKNOWLEDGEMENT));
     } catch {
       if (this.mode === 'command-listening') {
         this.statusMessageSignal.set('Listening for your command...');
@@ -346,7 +347,8 @@ export class TranscriptionFacade {
     }
 
     try {
-      await this.speechSynthesis.speak(response);
+      this.voiceStateSignal.set('reading');
+      await firstValueFrom(this.speechSynthesis.speak(response));
     } catch {
       this.statusMessageSignal.set(`Backend replied: ${response}`);
     }
@@ -376,11 +378,8 @@ export class TranscriptionFacade {
 
     if (this.speechSynthesis.isSupported()) {
       try {
-        await this.speechSynthesis.speak(SLEEP_RESPONSE, {
-          onStart: () => {
-            this.statusMessageSignal.set(SLEEP_RESPONSE);
-          },
-        });
+        this.voiceStateSignal.set('reading');
+        await firstValueFrom(this.speechSynthesis.speak(SLEEP_RESPONSE));
       } catch {
         this.statusMessageSignal.set(SLEEP_RESPONSE);
       }
@@ -408,11 +407,9 @@ export class TranscriptionFacade {
     }
 
     try {
-      await this.speechSynthesis.speak(FAILURE_RESPONSE, {
-        onStart: () => {
-          this.statusMessageSignal.set(FAILURE_RESPONSE);
-        },
-      });
+      this.statusMessageSignal.set(FAILURE_RESPONSE);
+      this.voiceStateSignal.set('reading');
+      await firstValueFrom(this.speechSynthesis.speak(FAILURE_RESPONSE));
     } catch {
       this.statusMessageSignal.set(FAILURE_RESPONSE);
     }

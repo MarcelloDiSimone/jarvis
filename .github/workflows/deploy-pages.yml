@@ -33,10 +33,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build app
-        run: npm exec nx run jarvis-client:build:github-pages
+      - name: Lint
+        run: npm exec -- nx run-many -t lint
+
+      - name: Test
+        run: npm exec -- nx run-many -t test
         env:
           CI: true
+
+      - name: Build app
+        run: npm exec -- nx run jarvis-client:build:github-pages
+        env:
+          CI: true
+          AI_WEBHOOK_URL: ${{ vars.AI_WEBHOOK_URL }}
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5

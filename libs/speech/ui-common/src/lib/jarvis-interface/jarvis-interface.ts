@@ -7,6 +7,7 @@ import {
   input,
   signal,
 } from '@angular/core';
+import type { VoiceState } from '@jarvis/speech-domain';
 
 @Component({
   selector: 'ui-jarvis-interface',
@@ -14,6 +15,7 @@ import {
   styleUrl: './jarvis-interface.scss',
   host: {
     '[class.recording]': 'isRecording()',
+    '[class.reading]': 'isReading()',
     '[style.--loudness]': 'renderedLoudness()',
   },
 })
@@ -24,9 +26,10 @@ export class UiJarvisInterfaceComponent {
   private pendingLoudness: number | undefined;
 
   readonly loudness = input(0);
-  readonly voiceState = input('inactive');
+  readonly voiceState = input<VoiceState>('inactive');
 
   readonly isRecording = computed(() => this.voiceState() === 'recording');
+  readonly isReading = computed(() => this.voiceState() === 'reading');
 
   protected readonly renderedLoudness = signal(0);
 

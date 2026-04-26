@@ -23,6 +23,14 @@ describe('UiJarvisInterfaceComponent', () => {
     expect(component).toBeTruthy();
   });
 
+  it('sets a reading host class for response playback', () => {
+    fixture.componentRef.setInput('voiceState', 'reading');
+    fixture.detectChanges();
+
+    expect(fixture.nativeElement.classList.contains('reading')).toBe(true);
+    expect(fixture.nativeElement.classList.contains('recording')).toBe(false);
+  });
+
   it('throttles rounded normalized loudness updates on the host style', () => {
     vi.useFakeTimers();
 

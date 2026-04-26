@@ -35,4 +35,11 @@ describe('calculateLoudness', () => {
 
     expect(loudness).toBeCloseTo(1, 5);
   });
+
+  it('expands subtle waveform changes without changing the maximum', () => {
+    const loudness = calculateLoudness(new Uint8Array([128, 132, 128, 124]));
+
+    expect(loudness).toBeGreaterThan(0.25);
+    expect(loudness).toBeLessThan(0.27);
+  });
 });

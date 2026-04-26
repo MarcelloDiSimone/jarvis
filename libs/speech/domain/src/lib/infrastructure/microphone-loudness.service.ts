@@ -1,6 +1,7 @@
 import { Injectable, signal } from '@angular/core';
 
 const LOUDNESS_BOOST = 4;
+const LOUDNESS_RESPONSE_CURVE = 0.55;
 
 export const MICROPHONE_LOUDNESS_CONSTRAINTS: MediaStreamConstraints = {
   audio: {
@@ -15,7 +16,9 @@ type WindowWithWebkitAudioContext = Window &
     webkitAudioContext?: typeof AudioContext;
   };
 
-export function calculateLoudness(samples: Uint8Array<ArrayBufferLike>): number {
+export function calculateLoudness(
+  samples: Uint8Array<ArrayBufferLike>,
+): number {
   if (samples.length === 0) {
     return 0;
   }
@@ -28,8 +31,9 @@ export function calculateLoudness(samples: Uint8Array<ArrayBufferLike>): number 
   }
 
   const rms = Math.sqrt(sum / samples.length);
+  const boostedLoudness = Math.min(1, rms * LOUDNESS_BOOST);
 
-  return Math.min(1, rms * LOUDNESS_BOOST);
+  return Math.pow(boostedLoudness, LOUDNESS_RESPONSE_CURVE);
 }
 
 @Injectable({ providedIn: 'root' })

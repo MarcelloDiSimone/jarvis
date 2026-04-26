@@ -50,6 +50,7 @@ export class FeatureTranscriptionComponent implements OnDestroy {
     inactive: 'Inactive',
     waiting: 'Waiting',
     recording: 'Recording',
+    reading: 'Reading',
   };
 
   ngOnDestroy(): void {

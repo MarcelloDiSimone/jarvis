@@ -60,6 +60,9 @@ use {
   fill: none;
   vector-effect: non-scaling-stroke;
   transition: stroke 1s linear;
+  stroke-opacity: calc(0.5 + (0.5 * var(--loudness)));
+  fill-opacity: calc(0.5 + (0.5 * var(--loudness)));
+  transition: all 50ms ease-in-out;
 }
 
 .ornament {
@@ -129,7 +132,7 @@ use {
   stroke-dasharray: 21.89801066, 10.51110816;
   stroke: var(--color-stroke);
   transform-origin: 400px 400px;
-  animation: rotate-cw 10s infinite alternate-reverse;
+  animation: rotate-cw 15s infinite alternate-reverse;
 }
 
 #circle-dashed-inner-1 {
@@ -139,7 +142,8 @@ use {
   animation-delay: 1s;
 }
 
-:host(.recording) {
+:host(.recording),
+:host(.reading) {
   --opacity: 0.16;
 
   #caption path {
