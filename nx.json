@@ -39,7 +39,7 @@
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
     },
-    "@angular/build:dev-server": {
+    "@nx/angular:dev-server": {
       "options": {
         "host": "0.0.0.0",
         "ssl": true,

@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.app.json",
+  "files": [
+    "../types.d.ts",
+    "environment.ts",
+    "environment.development.ts",
+    "environment.github-pages.ts"
+  ]
+}
